@@ -3,7 +3,7 @@
   "version": "1.2.3",
   "description": "Plotly.js Node.js export server",
   "repository": {
-    "url": "https://github.com/striezel/plotly-node-export-server",
+    "url": "https://gitlab.com/striezel/plotly-node-export-server.git",
     "type": "git"
   },
   "main": "server.js",
