@@ -68,15 +68,15 @@ will generate a JSON response like e.g.:
 
     {
       "success": true,
-      "filename": "graph-1604764778687.png"
+      "filename": "graph-25273999-dea9-4da2-aad2-dbdf2e38a0c9.png"
     }
 
 The field _filename_ in the response indicates the location of the generated
 image file on the server. In the example above you could then get the image from
-<http://localhost:3000/graph-1604764778687.png>. Given the data above the image
-would look like this:
+<http://localhost:3000/graph-25273999-dea9-4da2-aad2-dbdf2e38a0c9.png>. Given
+the data above the image would look like this:
 
-![Generated image example](./documentation/graph-1604764778687.png)
+![Generated image example](./documentation/graph-25273999-dea9-4da2-aad2-dbdf2e38a0c9.png)
 
 ## Troubleshooting
 
