@@ -1,6 +1,6 @@
 /*
     Plotly.js offline image export server with Node.js
-    Copyright (C) 2018, 2020  Dirk Stolle
+    Copyright (C) 2018, 2020, 2021  Dirk Stolle
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,6 +24,7 @@ const path = require('path');
 const paths = require('./paths.js');
 const phantomize = require('./phantomize.js');
 const url = require('url');
+const uuidv4 = require('uuid/v4');
 
 const hostname = 'localhost';
 const port = 3000;
@@ -178,7 +179,7 @@ const server = http.createServer(function(req, res) {
       return;
     }
     // Render file with PhantomJS.
-    const filename = 'graph-' + Date.now() + '.png';
+    const filename = 'graph-' + uuidv4() + '.png';
     const result = phantomize.render(body, filename);
     if (result.success) {
       res.statusCode = 200; // 200 == OK
