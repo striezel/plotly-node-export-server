@@ -38,7 +38,7 @@ const paths = {
   phantomjs: basePathParts.concat(['node_modules', 'phantomjs-prebuilt', 'lib', 'phantom', 'bin', 'phantomjs']).join(path.sep),
 
   // absolute path of the current Plotly.js script
-  plotlyJs: basePathParts.concat(['plotly-1.58.4.min.js']).join(path.sep)
+  plotlyJs: basePathParts.concat(['plotly-1.58.5.min.js']).join(path.sep)
 };
 
 // On Windows systems we need the .exe extension to detect the file properly.

@@ -14,6 +14,9 @@ version change in this application.
 ## Version next (2021-07-??)
 
 * __[maintenance]__
+The version of Plotly.js is bumped from 1.58.4 to 1.58.5.
+
+* __[maintenance]__
 The package dependencies `mime-db` and `mime-types` are updated to 1.48.0 and
 2.1.31, respectively.
 
