@@ -11,7 +11,7 @@ application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
 
-## Version next (2021-07-??)
+## Version 1.4.1 (2021-07-18)
 
 * __[maintenance]__
 The version of Plotly.js is bumped from 1.58.4 to 1.58.5.
