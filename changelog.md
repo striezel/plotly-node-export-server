@@ -11,6 +11,12 @@ application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
 
+## Version 1.4.2 (2021-08-01)
+
+* __[maintenance]__
+Update dependencies `buffer-from` to 1.1.2, `mime-db` to 1.49.0 and `mime-types`
+to 2.1.32.
+
 ## Version 1.4.1 (2021-07-18)
 
 * __[maintenance]__
