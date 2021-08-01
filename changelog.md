@@ -11,12 +11,17 @@ application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
 
-## Version 1.5.0-pre1 (2021-08-01)
+## Version 1.5.0 (2021-08-01)
 
 * __[new feature]__
 The port to which the server binds can now be changed by setting the environment
 variable `PORT`. If `PORT` is not set or is not a valid port number, then the
 default port 3000 is used.
+
+* __[new feature]__
+The hostname which the server shall use can now be changed by setting the
+environment variable `HOST`. If `HOST` is not set, then `localhost` will be
+used as default.
 
 ## Version 1.4.2 (2021-08-01)
 
