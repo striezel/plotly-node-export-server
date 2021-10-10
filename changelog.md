@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 1.5.1 (2021-10-10)
+
+* __[maintenance]__
+Update dependencies `core-util-is` to 1.0.3, `graceful-fs` to 4.2.8, `mime-db`
+to 1.50.0, `mime-types` to 2.1.33.
 
 ## Version 1.5.0 (2021-08-01)
 
