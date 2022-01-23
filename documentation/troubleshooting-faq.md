@@ -12,24 +12,28 @@ Note that there are some subtle differences between objects specified directly
 in JavaScript and valid JSON. For example, the plot data that could be specified
 in a JavaScript code snippet as
 
-    var data = [
-      {
-        x: ['2013-10-04 22:23:00', '2013-11-04 22:23:00', '2013-12-04 22:23:00'],
-        y: [1, 3, 6],
-        type: 'scatter'
-      }
-    ];
+```js
+var data = [
+  {
+    x: ['2013-10-04 22:23:00', '2013-11-04 22:23:00', '2013-12-04 22:23:00'],
+    y: [1, 3, 6],
+    type: 'scatter'
+  }
+];
 
-    Plotly.newPlot('myDiv', data);
+Plotly.newPlot('myDiv', data);
+```
 
 corresponds to the following JSON to generate the same plot on the export
 server:
 
-    {
-      "x": ["2013-10-04 22:23:00", "2013-11-04 22:23:00", "2013-12-04 22:23:00"],
-      "y": [1, 3, 6],
-      "type": "scatter"
-    }
+```json
+{
+  "x": ["2013-10-04 22:23:00", "2013-11-04 22:23:00", "2013-12-04 22:23:00"],
+  "y": [1, 3, 6],
+  "type": "scatter"
+}
+```
 
 The notable differences are:
 
