@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 1.5.4 (2022-03-21)
+
+* __[maintenance]__
+Update dependencies `mime-db` to 1.52.0 and `mime-types` to 2.1.35.
+
 ## Version 1.5.3 (2022-01-23)
 
 * __[maintenance]__
