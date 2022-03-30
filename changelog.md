@@ -10,6 +10,13 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 1.5.5 (2022-03-30)
+
+* __[maintenance]__
+Update dependency `minimist` to 1.26.0. This fixes a prototype pollution
+vulnerabilty in the `minimist` package,
+[CVE-2021-44906](https://nvd.nist.gov/vuln/detail/CVE-2021-44906).
+
 ## Version 1.5.4 (2022-03-21)
 
 * __[maintenance]__
