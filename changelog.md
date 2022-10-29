@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Version 2.0.0-pre (2022-10-??)
+## Version 2.0.0 (2022-10-29)
 
 * __[breaking change]__
 The file format of the generated images is changed from PNG to SVG. This is due
