@@ -7,3 +7,4 @@
 .gitlab-ci.yml
 # Don't copy generated images.
 */*.png
+*/*.svg
