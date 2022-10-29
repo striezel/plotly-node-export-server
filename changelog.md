@@ -10,6 +10,28 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 2.0.0-pre (2022-10-??)
+
+* __[breaking change]__
+The file format of the generated images is changed from PNG to SVG. This is due
+to the internal replacement of PhantomJS with jsdom for rendering. PhantomJS
+does not work with newer versions of plotly.js (2.0 and later), so it had to be
+replaced. If you still need PNG files, then stick with version 1.5.7 of the
+application. However, version 1.5.7 is no longer maintained.
+
+* __[breaking change]__
+The version of Plotly.js is bumped from 1.58.5 to 2.16.1. Version 2.0.0 of
+Plotly.js came with some breaking changes / removed features. For details see
+[the changelog of Plotly.js](https://github.com/plotly/plotly.js/blob/master/CHANGELOG.md#200----2021-06-07).
+
+* __[breaking change]__
+__Support for Node.js 13 and older versions is dropped.__ The minimum required
+versions is now Node.js 14. Node.js versions before 14 have reached their end of
+life anyway, so users of those versions should upgrade to newer versions anyway.
+
+* __[breaking change]__
+The default image width is 700 pixels, and the default height is 400 pixels.
+
 ## Version 1.5.7 (2022-10-28)
 
 * __[maintenance]__
