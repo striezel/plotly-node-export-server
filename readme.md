@@ -11,8 +11,7 @@ on the Plotly servers.
 
 This application needs two prerequisites:
 
-* Node.js (preferably the latest LTS version)
-* PhantomJS (installed via NPM)
+* Node.js 14 or later (preferably the latest LTS version)
 
 ### Installation of Node.js
 
@@ -23,24 +22,12 @@ then please take a look at [Setup with Docker](./documentation/docker.md).)_
 
 ## Initial setup: install Node.js dependency packages
 
-The application requires a package for PhantomJS. To install that, type
+The application requires a package for jsdom. To install that, type
 
     npm install
 
 in the directory `export-server/`. You only need to do this once. The packages
 are then cached in the `node_modules/` directory for future use.
-
-However, PhantomJS does not offer a prebuilt package for some platforms, namely
-ARM which is used by Raspberry Pi (among others). In such case you can install
-the PhantomJS package provided by your package manager via
-
-    apt-get install phantomjs
-
-on Raspbian, or via
-
-    yum install phantomjs
-
-on RedHat-based distributions.
 
 ## Start the application
 
@@ -97,15 +84,15 @@ will generate a JSON response like e.g.:
 
     {
       "success": true,
-      "filename": "graph-25273999-dea9-4da2-aad2-dbdf2e38a0c9.png"
+      "filename": "graph-007e94ad-97c7-4f7b-9bf1-a524f689b8b5.svg"
     }
 
 The field _filename_ in the response indicates the location of the generated
 image file on the server. In the example above you could then get the image from
-<http://localhost:3000/graph-25273999-dea9-4da2-aad2-dbdf2e38a0c9.png>. Given
+<http://localhost:3000/graph-67294429-8620-4d4c-a63e-74727c6a4418.svg>. Given
 the data above the image would look like this:
 
-![Generated image example](./documentation/graph-25273999-dea9-4da2-aad2-dbdf2e38a0c9.png)
+![Generated image example](./documentation/graph-007e94ad-97c7-4f7b-9bf1-a524f689b8b5.svg)
 
 ## Troubleshooting
 

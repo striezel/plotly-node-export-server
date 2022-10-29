@@ -48,7 +48,7 @@ The notable differences are:
 
 If the image looks something like this, ...
 
-![Empty plot](./empty-plot.png)
+![Empty plot](./empty-plot.svg)
 
 ... then it is due to the fact that the specified plot data is not the way that
 Plotly.js expects it to be. In other words, there is in error in the specified

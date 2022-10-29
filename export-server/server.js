@@ -1,6 +1,6 @@
 /*
     Plotly.js offline image export server with Node.js
-    Copyright (C) 2018, 2020, 2021  Dirk Stolle
+    Copyright (C) 2018, 2020, 2021, 2022  Dirk Stolle
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,8 +21,7 @@
 const fs = require('fs');
 const http = require('http');
 const path = require('path');
-const paths = require('./paths.js');
-const phantomize = require('./phantomize.js');
+const ssr = require('./ssr.js');
 const url = require('url');
 const uuidv4 = require('uuid/v4');
 
@@ -42,62 +41,8 @@ if (process.env.PORT) {
 }
 const port = (parsedPort && parsedPort > 0 && parsedPort < 65536) ? parsedPort : 3000;
 
-// ** Preparation, step 1: **
-// Find the PhantomJS executable. It is usually located in the node_modules
-// directory as ./node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs.
-if (!fs.existsSync(paths.phantomjs)) {
-  // This whole server is pointless without PhantomJS binary, so quit here.
-  console.error("There is no PhantomJS binary in " + paths.phantomjs + '!');
-  if (process.arch !== 'arm' ) {
-    console.info("Please check that you have the NPM module phantomjs-prebuilt installed.");
-    console.info("You can do this via\n\n    npm install\n\nwhich should install "
-      + "all required dependencies for this application, including PhantomJS.");
-    console.info("You could also just install PhantomJS by typing\n\n");
-    console.info("    npm install --save phantomjs-prebuilt");
-  } else {
-    console.info("Please check that you have the APT package phantomjs installed.");
-    console.info("You can do this via\n\n    sudo apt-get install phantomjs");
-    console.info("\n\nwhich should install PhantomJS.");
-  }
-  process.exit(1);
-}
-console.info("=> PhantomJS binary found in " + paths.phantomjs + '.');
-
-// ** Preparation, step 2: **
-// Prepare the template file for use:
-// Replace placeholder in template with actual script path.
-
-/* Adjusts absolute path for unse in HTML on Windows systems. Returns argument
-   unchanged on other platforms.
-*/
-function localPath(absolutePath) {
-  if (process.platform == 'win32') {
-    // See https://blogs.msdn.microsoft.com/ie/2006/12/06/file-uris-in-windows/
-    // for proper file URI syntax on Windows.
-    // The following line basically replaces ALL occurrences of backward slash
-    // with forward slash and all space characters with the URL-encoded version
-    // for that (%20). We cannot simply do a String.replace(), because that
-    // only replaces the first occurrence.
-    return '/' + absolutePath.split(path.sep).join('/').split(' ').join('%20');
-  } else {
-    return absolutePath;
-  }
-}
-
-try {
-  var templateContent = fs.readFileSync(paths.template);
-  templateContent = templateContent.toString().replace('{{absolutePlotlyJsPath}}', localPath(paths.plotlyJs));
-  fs.writeFileSync(paths.usableTemplate, templateContent, {mode: 0o644, flag: 'w'});
-} catch (e) {
-  // Something went wrong while writing the file.
-  console.error('The render template could not be created!');
-  process.exit(2);
-}
-console.info("=> Render template has been created in " + paths.usableTemplate + '.');
-
-
 const server = http.createServer(function(req, res) {
-  // ---- Handle PNG file requests ----
+  // ---- Handle SVG file requests ----
   const file = url.parse(req.url);
   if (file.pathname !== '/') {
     // It is a file request.
@@ -108,15 +53,15 @@ const server = http.createServer(function(req, res) {
       res.setHeader('Content-Type', 'text/plain');
       return res.end('Forbidden');
     }
-    // Avoid access to any non-PNG files.
-    if (!realPath.endsWith('.png')) {
+    // Avoid access to any non-SVG files.
+    if (!realPath.endsWith('.svg')) {
       res.statusCode = 403;
       res.setHeader('Content-Type', 'text/plain');
-      return res.end('Only requests to PNG files are allowed.');
+      return res.end('Only requests to SVG files are allowed.');
     }
     var s = fs.createReadStream(realPath);
     s.on('open', function () {
-        res.setHeader('Content-Type', 'image/png');
+        res.setHeader('Content-Type', 'image/svg+xml');
         res.statusCode = 200; // 200 == OK
         s.pipe(res);
     });
@@ -159,7 +104,7 @@ const server = http.createServer(function(req, res) {
   });
 
   // Event gets triggered when there is no more data from the client.
-  req.on('end', function () {
+  req.on('end', async function () {
     if (killed) {
       return;
     }
@@ -191,9 +136,9 @@ const server = http.createServer(function(req, res) {
     if (killed) {
       return;
     }
-    // Render file with PhantomJS.
-    const filename = 'graph-' + uuidv4() + '.png';
-    const result = phantomize.render(body, filename);
+    // Render file with JSDOM.
+    const filename = 'graph-' + uuidv4() + '.svg';
+    const result = await ssr.render(body, filename, 700, 400);
     if (result.success) {
       res.statusCode = 200; // 200 == OK
     } else {

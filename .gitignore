@@ -1,8 +1,6 @@
 # Node.js modules
 node_modules/
 
-# generated PNG files
+# generated PNG and SVG files
 *.png
-
-# prepared HTML template file
-template-real.html
+*.svg
