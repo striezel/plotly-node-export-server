@@ -1,6 +1,6 @@
 {
   "name": "plotly-node-export-server",
-  "version": "1.5.7",
+  "version": "2.0.0-alpha",
   "description": "Plotly.js Node.js export server",
   "repository": {
     "url": "https://gitlab.com/striezel/plotly-node-export-server.git",
@@ -16,12 +16,15 @@
     "export",
     "offline",
     "Node.js",
-    "PhantomJS"
+    "jsdom"
   ],
   "author": "Dirk Stolle <striezel-dev@web.de>",
   "license": "GPL-3.0",
   "dependencies": {
-    "phantomjs-prebuilt": "^2.1.16",
+    "jsdom": "^20.0.1",
     "uuid": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

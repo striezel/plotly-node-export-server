@@ -12,7 +12,7 @@ installer package and install it.
 
 ## Node.js on Linux
 If your Linux distribution does not provide a recent Node.js version (at least
-version 8 is recommended), you can add an (unofficial) Node.js package
+version 14 is recommended), you can add an (unofficial) Node.js package
 repository to your system.
 
 ### Debian-based
@@ -20,9 +20,9 @@ repository to your system.
 On Debian-based systems create the file **/etc/apt/sources.list.d/nodejs.list**
 and give it the following contents:
 
-    # Node.js 14.x for Debian 9 (codename stretch)
-    deb https://deb.nodesource.com/node_14.x stretch main
-    deb-src https://deb.nodesource.com/node_14.x stretch main
+    # Node.js 14.x for Debian 11 (codename bullseye)
+    deb https://deb.nodesource.com/node_14.x bullseye main
+    deb-src https://deb.nodesource.com/node_14.x bullseye main
 
 After that do
 
@@ -45,21 +45,9 @@ You might want to check the script code before doing that, though.
 
 ## Initial setup: install Node.js packages
 
-The application requires a package for PhantomJS. To install that, type
+The application requires a package for jsdom. To install that, type
 
     npm install
 
 in the directory `export-server/`. You only need to do this once. The packages
 are then cached in the `node_modules/` directory for future use.
-
-However, PhantomJS does not offer a prebuilt package for some platforms, namely
-ARM which is used by Raspberry Pi (among others). In such case you can install
-the PhantomJS package provided by your package manager via
-
-    apt-get install phantomjs
-
-on Raspbian, or via
-
-    yum install phantomjs
-
-on RedHat-based distributions.

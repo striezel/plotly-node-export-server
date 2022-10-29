@@ -11,8 +11,7 @@ on the Plotly servers.
 
 This application needs two prerequisites:
 
-* Node.js (preferably the latest LTS version)
-* PhantomJS (installed via NPM)
+* Node.js 14 or later (preferably the latest LTS version)
 
 ### Installation of Node.js
 
@@ -23,24 +22,12 @@ then please take a look at [Setup with Docker](./documentation/docker.md).)_
 
 ## Initial setup: install Node.js dependency packages
 
-The application requires a package for PhantomJS. To install that, type
+The application requires a package for jsdom. To install that, type
 
     npm install
 
 in the directory `export-server/`. You only need to do this once. The packages
 are then cached in the `node_modules/` directory for future use.
-
-However, PhantomJS does not offer a prebuilt package for some platforms, namely
-ARM which is used by Raspberry Pi (among others). In such case you can install
-the PhantomJS package provided by your package manager via
-
-    apt-get install phantomjs
-
-on Raspbian, or via
-
-    yum install phantomjs
-
-on RedHat-based distributions.
 
 ## Start the application
 
