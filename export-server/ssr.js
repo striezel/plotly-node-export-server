@@ -18,7 +18,7 @@
 
 var fs = require('fs');
 const jsdom = require('jsdom');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 /* Renders JSON data for a Plotly.js plot into a SVG file.
 

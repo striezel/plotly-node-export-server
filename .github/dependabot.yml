@@ -9,10 +9,6 @@ updates:
       interval: "daily"
     reviewers:
       - "striezel"
-    ignore:
-      # Phantom.js uses the same major version of uuid (3.x), and in order to
-      # avoid having two different versions, uuid is not updated.
-      - dependency-name: "uuid"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
