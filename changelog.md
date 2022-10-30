@@ -10,6 +10,15 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 2.1.0 (2022-10-30)
+
+__[feature]__
+The dimensions of the generated image can now be adjusted by adding the HTTP
+headers `X-Image-Width` and / or `X-Image-Height` to the request. If none of
+them are specified, the size remains at 700 x 400 pixels as in version 2.0.2.
+
+See the readme for an example of the new feature.
+
 ## Version 2.0.2 (2022-10-30)
 
 * __[maintenance]__

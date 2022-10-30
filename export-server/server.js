@@ -138,7 +138,7 @@ const server = http.createServer(function(req, res) {
     }
     // Render file with JSDOM.
     const filename = 'graph-' + uuidv4() + '.svg';
-    const result = await ssr.render(body, filename, 700, 400);
+    const result = await ssr.render(body, filename, req.headers["x-image-width"], req.headers["x-image-height"]);
     if (result.success) {
       res.statusCode = 200; // 200 == OK
     } else {

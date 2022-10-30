@@ -94,6 +94,25 @@ the data above the image would look like this:
 
 ![Generated image example](./documentation/graph-007e94ad-97c7-4f7b-9bf1-a524f689b8b5.svg)
 
+### Adjusting the width and height of the generated image
+
+The generated SVG image has a width of 700 pixels and a height of 400 pixels by
+default. If no size is specified, then the image will be of that default size.
+However, this may not always be suitable for your needs.
+
+To change the size, add the HTTP headers `X-Image-Width` and / or
+`X-Image-Height` to the request. Acceptable values are integers only, the values
+will be interpreted as pixels, not centimetres, inches or other. For example, if
+you want the image to be 750 x 500 pixels, then set the HTTP headers
+
+    X-Image-Width: 750
+    X-Image-Height: 500
+
+Using the same JSON as above, the created image will now be slightly larger and
+look like this:
+
+![Custom size image example](./documentation/graph-5b41aefe-146f-49b6-bcc6-dac42102cad9.svg)
+
 ## Troubleshooting
 
 If you encounter problems while trying to generate a plot image, then please
