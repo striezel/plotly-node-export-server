@@ -9,7 +9,7 @@ on the Plotly servers.
 
 ## Requirements
 
-This application needs two prerequisites:
+This application needs one prerequisite:
 
 * Node.js 14 or later (preferably the latest LTS version)
 
@@ -22,7 +22,7 @@ then please take a look at [Setup with Docker](./documentation/docker.md).)_
 
 ## Initial setup: install Node.js dependency packages
 
-The application requires a package for jsdom. To install that, type
+The application requires a package for `jsdom`. To install that, type
 
     npm install
 
