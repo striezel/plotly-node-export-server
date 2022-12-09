@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 2.1.3 (2022-12-09)
+
+* __[maintenance]__
+Update dependency `decimal.js` to 10.4.3.
+
 ## Version 2.1.2 (2022-11-24)
 
 * __[maintenance]__
