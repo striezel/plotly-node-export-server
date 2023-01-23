@@ -10,6 +10,14 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 2.4.0-pre (2023-01-24)
+
+* __[maintenance]__
+Update dependency `punycode` to 2.3.0.
+
+* __[maintenance]__
+Update dependency `acorn` to 8.8.2.
+
 ## Version 2.3.0 (2023-01-23)
 
 * __[maintenance]__
