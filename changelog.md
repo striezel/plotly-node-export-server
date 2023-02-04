@@ -10,6 +10,13 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 2.4.1 (2023-02-04)
+
+* __[maintenance]__
+The version of Plotly.js is bumped from 2.18.0 to 2.18.1.
+The new version contains a few changes and fixes. For details on those see
+[the changelog of Plotly.js](https://github.com/plotly/plotly.js/blob/master/CHANGELOG.md#2181----2023-02-02).
+
 ## Version 2.4.0 (2023-01-24)
 
 * __[maintenance]__
