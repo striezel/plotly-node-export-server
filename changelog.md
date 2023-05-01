@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 2.6.1 (2023-05-01)
+
+* __[maintenance]__
+Update dependency `jsdom` to 21.1.2.
+
 ## Version 2.6.0 (2023-04-23)
 
 * __[maintenance]__
