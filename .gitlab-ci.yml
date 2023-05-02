@@ -1,13 +1,3 @@
-node_14:
-  image: node:14-alpine
-  stage: build
-  before_script:
-    - node --version
-    - npm --version
-  script:
-    - cd ./export-server
-    - npm install
-
 node_16:
   image: node:16-alpine
   stage: build
@@ -20,6 +10,16 @@ node_16:
 
 node_18:
   image: node:18-alpine
+  stage: build
+  before_script:
+    - node --version
+    - npm --version
+  script:
+    - cd ./export-server
+    - npm install
+
+node_20:
+  image: node:20-alpine
   stage: build
   before_script:
     - node --version
