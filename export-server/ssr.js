@@ -101,7 +101,7 @@ exports.render = async function(jsonData, filename, width, height) {
     })
     .catch(function(error) {
       console.log("Error occurred: " + error);
-      result =  { success: false, failure: 'promise-rejected' };
+      result = { success: false, failure: 'promise-rejected' };
       return result;
     });
 
