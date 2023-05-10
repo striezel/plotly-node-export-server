@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Version 4.0.0-pre (2023-05-11)
+## Version 4.0.0 (2023-05-11)
 
 * __[breaking change]__
   Generated image files are now served directly in the response to the request
