@@ -236,7 +236,7 @@ Update dependencies `graceful-fs` to 4.2.10 and `mkdirp` to 0.5.6.
 
 * __[maintenance]__
 Update dependency `minimist` to 1.26.0. This fixes a prototype pollution
-vulnerabilty in the `minimist` package,
+vulnerability in the `minimist` package,
 [CVE-2021-44906](https://nvd.nist.gov/vuln/detail/CVE-2021-44906).
 
 ## Version 1.5.4 (2022-03-21)
