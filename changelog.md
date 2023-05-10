@@ -10,6 +10,27 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 4.0.0-pre (2023-05-11)
+
+* __[breaking change]__
+  Generated image files are now served directly in the response to the request
+  instead of just providing a JSON response that contains the file name of the
+  generated image. That is, instead of returning a JSON response like
+  ```json
+  {
+    "success": true,
+    "filename": "graph-007e94ad-97c7-4f7b-9bf1-a524f689b8b5.svg"
+  }
+  ```
+  the image is returned directly in the HTTP response message body.
+
+  This approach has several advantages:
+  * Users only need to make one request to the server instead of two to get the
+    generated image.
+  * The server does not get filled with generated images files as in previous
+    versions, because the images do not need to be stored for later retrieval
+    anymore.
+
 ## Version 3.1.0 (2023-05-06)
 
 * __[maintenance]__
