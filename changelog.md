@@ -10,7 +10,12 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Version 4.2.0-pre (2023-06-06)
+## Version 4.2.0 (2023-06-06)
+
+* __[maintenance]__
+The version of Plotly.js is bumped from 2.23.2 to 2.24.0.
+The new version contains some fixes and new features. For details on those see
+[the changelog of Plotly.js](https://github.com/plotly/plotly.js/blob/master/CHANGELOG.md#2240----2023-06-06).
 
 * __[maintenance]__
 Update dependency `tough-cookie` to 4.1.3.
