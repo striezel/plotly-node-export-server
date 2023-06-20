@@ -1,4 +1,4 @@
-FROM debian:11-slim
+FROM debian:12-slim
 MAINTAINER Dirk Stolle <striezel-dev@web.de>
 
 # Always update package lists and install updates first.
@@ -14,9 +14,9 @@ RUN apt-get update && apt-get upgrade -y && \
         ca-certificates \
         libfontconfig1
 # Node.js is required to run this application.
-RUN echo "# Node.js 18.x for Debian 11 (codename bullseye)" > /etc/apt/sources.list.d/nodejs.list \
-  && echo "deb https://deb.nodesource.com/node_18.x bullseye main" >> /etc/apt/sources.list.d/nodejs.list \
-  && echo "deb-src https://deb.nodesource.com/node_18.x bullseye main" >> /etc/apt/sources.list.d/nodejs.list
+RUN echo "# Node.js 18.x for Debian 12 (codename bookworm)" > /etc/apt/sources.list.d/nodejs.list \
+  && echo "deb https://deb.nodesource.com/node_18.x bookworm main" >> /etc/apt/sources.list.d/nodejs.list \
+  && echo "deb-src https://deb.nodesource.com/node_18.x bookworm main" >> /etc/apt/sources.list.d/nodejs.list
 RUN apt-key adv --fetch-keys https://deb.nodesource.com/gpgkey/nodesource.gpg.key
 RUN apt-get update && apt-get install --no-install-recommends -y nodejs bzip2
 # Create directory for application.
