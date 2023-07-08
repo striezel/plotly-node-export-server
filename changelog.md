@@ -13,7 +13,7 @@ version change in this application.
 ## Version 4.2.2 (2023-07-08)
 
 * __[maintenance]__
-Update dependency `nwsapi` to 2.2.5.
+Update dependency `nwsapi` to 2.2.7.
 
 ## Version 4.2.1 (2023-06-20)
 
