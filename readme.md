@@ -1,7 +1,7 @@
 # Node.js server for offline export of Plotly.js graphs
 
 This repository contains a Node.js application that starts a server which can
-render [Plotly.js](https://plotly.com/javascript/) graphs to PNG images
+render [Plotly.js](https://plotly.com/javascript/) graphs to SVG images
 __without sending the data to the servers of Plotly__. That means all plot data
 stays on this local server and is NOT sent over the net. If you value the
 privacy of your data, this might be a better option for you than using the API
@@ -68,7 +68,7 @@ If `HOST` is not set, then `localhost` will be used as hostname.
 
 ## Usage
 
-To generate a PNG file of a Plotly plot, just send an HTTP POST request to the
+To generate a SVG file of a Plotly plot, just send an HTTP POST request to the
 running Node.js server on <http://localhost:3000/> containing the data for the
 plot as JSON in its body.
 
