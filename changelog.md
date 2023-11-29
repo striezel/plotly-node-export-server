@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 4.5.3 (2023-11-29)
+
+* __[bug fix]__
+Fix error in handling of unusually large payloads.
+
 ## Version 4.5.2 (2023-11-10)
 
 * __[maintenance]__
