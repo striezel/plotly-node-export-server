@@ -3,22 +3,20 @@ MAINTAINER Dirk Stolle <striezel-dev@web.de>
 
 # Always update package lists and install updates first.
 # HTTPS transport for APT is required to get the Node.js packages.
-# wget, GnuPG and CA certificates are needed to get the key for the Nodesource
+# curl, GnuPG and CA certificates are needed to get the key for the Nodesource
 # APT repository.
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
         apt-transport-https \
-        wget \
+        curl \
         gnupg2 \
         dirmngr \
         ca-certificates \
         libfontconfig1
 # Node.js is required to run this application.
-RUN echo "# Node.js 18.x for Debian 12 (codename bookworm)" > /etc/apt/sources.list.d/nodejs.list \
-  && echo "deb https://deb.nodesource.com/node_18.x bookworm main" >> /etc/apt/sources.list.d/nodejs.list \
-  && echo "deb-src https://deb.nodesource.com/node_18.x bookworm main" >> /etc/apt/sources.list.d/nodejs.list
-RUN apt-key adv --fetch-keys https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-RUN apt-get update && apt-get install --no-install-recommends -y nodejs bzip2
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg \
+  && echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
+RUN apt-get update && apt-get install nodejs -y
 # Create directory for application.
 RUN mkdir -p /opt/export-server
 # Copy all files to that directory.
