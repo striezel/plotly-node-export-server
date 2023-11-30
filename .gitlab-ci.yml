@@ -17,6 +17,7 @@ node_18:
   script:
     - cd ./export-server
     - npm install
+    - ./test.sh
 
 node_20:
   image: node:20-alpine
@@ -27,3 +28,4 @@ node_20:
   script:
     - cd ./export-server
     - npm install
+    - ./test.sh
