@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Version 5.0.0-pre (2023-12-01)
+## Version 5.0.0 (2023-12-01)
 
 * __[breaking change]__
 __Support for Node.js 17 and older versions is dropped.__ The minimum required
