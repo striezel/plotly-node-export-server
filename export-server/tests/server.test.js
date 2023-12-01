@@ -1,7 +1,6 @@
 const assert = require('node:assert');
-const { spawn, spawnSync } = require('node:child_process');
 const http = require('node:http');
-const { after, before, describe, it } = require('node:test');
+const { describe, it } = require('node:test');
 
 describe('server', () => {
   describe('request to non-root URL is not acceptable', () => {
