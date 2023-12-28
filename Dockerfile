@@ -17,6 +17,11 @@ RUN apt-get update && apt-get upgrade -y && \
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg \
   && echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
 RUN apt-get update && apt-get install nodejs -y
+# In some rare cases, the Node.js version in Debian stable may be more recent
+# than the one provided by nodesource.com. In that case, the version from the
+# Debian stable repository will be installed. But since Debian stable split the
+# NPM binary into another package, this will have to be installed separately.
+RUN npm --version || apt-get install -y --no-install-recommends --no-install-suggests npm
 # Create directory for application.
 RUN mkdir -p /opt/export-server
 # Copy all files to that directory.
