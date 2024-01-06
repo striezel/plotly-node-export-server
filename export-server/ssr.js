@@ -1,6 +1,6 @@
 /*
     Plotly.js offline image export server with Node.js
-    Copyright (C) 2018, 2021, 2022, 2023  Dirk Stolle
+    Copyright (C) 2018, 2021, 2022, 2023, 2024  Dirk Stolle
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -88,7 +88,7 @@ exports.render = async function(jsonData, filename, width, height) {
   };
 
   await
-  fs.promises.readFile('./plotly-2.27.1.min.js', 'utf-8')
+  fs.promises.readFile('./plotly-2.28.0.min.js', 'utf-8')
     .then(win.eval)
     .then(() => win.Plotly.toImage({data: [data], layout: layout, config: config},
                                    { format: 'svg', imageDataOnly: true }))
