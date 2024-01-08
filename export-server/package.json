@@ -22,7 +22,7 @@
   "author": "Dirk Stolle <striezel-dev@web.de>",
   "license": "GPL-3.0",
   "dependencies": {
-    "jsdom": "^23.1.0",
+    "jsdom": "^23.2.0",
     "uuid": "^9.0.1"
   },
   "engines": {
