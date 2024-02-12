@@ -1,5 +1,8 @@
 FROM debian:12-slim
-MAINTAINER Dirk Stolle <striezel-dev@web.de>
+
+LABEL org.opencontainers.image.authors="Dirk Stolle <striezel-dev@web.de>"
+LABEL org.opencontainers.image.source=https://github.com/striezel/plotly-node-export-server
+LABEL org.opencontainers.image.licenses=GPL-3.0-or-later
 
 # Always update package lists and install updates first.
 # HTTPS transport for APT is required to get the Node.js packages.
