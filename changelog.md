@@ -10,6 +10,14 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.2.1-pre (2024-02-12)
+
+* __[maintenance]__
+Update dependency `http-proxy-agent` to 7.0.1.
+
+* __[maintenance]__
+Update dependency `https-proxy-agent` to 7.0.3.
+
 ## Version 5.2.0 (2024-02-03)
 
 * __[maintenance]__
