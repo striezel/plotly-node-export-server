@@ -39,6 +39,10 @@ jobs:
           TAG=$(echo "$VERSION" | cut --characters=2- )
           IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/plotly-node-export-server/plotly-node-export-server:$TAG
           docker tag plotly "$IMAGE_NAME"
+          TAG_MAJOR=$(echo "$TAG" | cut -d. -f1)
+          IMAGE_NAME_MAJOR=ghcr.io/${{ github.repository_owner }}/plotly-node-export-server/plotly-node-export-server:$TAG_MAJOR
+          docker tag plotly "$IMAGE_NAME_MAJOR"
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
           docker push "$IMAGE_NAME"
+          docker push "$IMAGE_NAME_MAJOR"
           docker logout ghcr.io
