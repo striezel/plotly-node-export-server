@@ -10,6 +10,14 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.5.1 (2024-05-03)
+
+* __[maintenance]__
+Update dependency `tough-cookie` to 4.1.4.
+
+* __[maintenance]__
+Update dependency `ws` to 8.17.0.
+
 ## Version 5.5.0 (2024-04-26)
 
 * __[maintenance]__
