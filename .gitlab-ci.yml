@@ -19,3 +19,14 @@ node_20:
     - cd ./export-server
     - npm install
     - ./test.sh
+
+node_22:
+  image: node:22-alpine
+  stage: build
+  before_script:
+    - node --version
+    - npm --version
+  script:
+    - cd ./export-server
+    - npm install
+    - ./test.sh
