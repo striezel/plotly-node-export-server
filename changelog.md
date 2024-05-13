@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.5.2 (2024-05-13)
+
+* __[maintenance]__
+Update dependency `nwsapi` to 2.2.10.
+
 ## Version 5.5.1 (2024-05-03)
 
 * __[maintenance]__
