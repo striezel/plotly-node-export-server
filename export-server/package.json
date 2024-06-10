@@ -23,7 +23,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "jsdom": "^24.1.0",
-    "uuid": "^9.0.1"
+    "uuid": "^10.0.0"
   },
   "engines": {
     "node": ">=18"
