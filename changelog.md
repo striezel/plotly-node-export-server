@@ -10,6 +10,13 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.6.3 (2024-06-22)
+
+* __[maintenance]__
+Update dependency `ws` to 8.17.1.
+This fixes a DoS vulnerability in the `ws` package,
+[CVE-2024-37890](https://nvd.nist.gov/vuln/detail/CVE-2024-37890).
+
 ## Version 5.6.2 (2024-06-11)
 
 * __[maintenance]__
