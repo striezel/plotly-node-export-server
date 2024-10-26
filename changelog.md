@@ -10,6 +10,12 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.8.9 (2024-10-27)
+
+* __[improvement]__
+A stack trace for some rendering errors is now logged to the console, if a stack
+trace is available.
+
 ## Version 5.8.8 (2024-10-25)
 
 * __[maintenance]__

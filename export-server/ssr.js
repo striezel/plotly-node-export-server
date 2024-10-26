@@ -101,6 +101,10 @@ exports.render = async function(jsonData, filename, width, height) {
     })
     .catch(function(error) {
       console.log("Error occurred: " + error);
+      let hasStack = error.stack && typeof error.stack === 'string';
+      if (hasStack) {
+        console.log("Stack trace: " + error.stack);
+      }
       result = { success: false, failure: 'promise-rejected' };
       return result;
     });
