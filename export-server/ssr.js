@@ -73,6 +73,7 @@ exports.render = async function(jsonData, filename, width, height) {
 
   const parsed_data = JSON.parse(jsonData);
   const data = parsed_data.data || parsed_data;
+  const array_data = Array.isArray(data) ? data : [ data ];
   const layout = parsed_data.layout || { width: width, height: height };
   const config = parsed_data.config || {};
 
@@ -90,7 +91,7 @@ exports.render = async function(jsonData, filename, width, height) {
   await
   fs.promises.readFile('./plotly-2.35.2.min.js', 'utf-8')
     .then(win.eval)
-    .then(() => win.Plotly.toImage({data: [data], layout: layout, config: config},
+    .then(() => win.Plotly.toImage({data: array_data, layout: layout, config: config},
                                    { format: 'svg', imageDataOnly: true }))
     .then(function(data) {
       fs.promises.writeFile(filename, data);
