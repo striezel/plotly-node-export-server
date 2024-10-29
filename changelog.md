@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Version 5.8.11-pre (2024-10-29)
+## Version 5.8.11 (2024-10-29)
 
 * __[bug fix]__
 Fix error in handling of array data for graphs.
@@ -20,6 +20,9 @@ Update dependency `parse5` to 7.2.1.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.56.
+
+* __[maintenance]__
+Update dependency `uuid` to 11.0.2.
 
 ## Version 5.8.10 (2024-10-28)
 
