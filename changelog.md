@@ -16,6 +16,9 @@ version change in this application.
 Fix error in handling of array data for graphs.
 
 * __[maintenance]__
+Update dependency `parse5` to 7.2.1.
+
+* __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.56.
 
 ## Version 5.8.10 (2024-10-28)
