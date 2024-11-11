@@ -10,6 +10,14 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.8.14 (2024-11-11)
+
+* __[maintenance]__
+Update dependencies `tldts` + `tldts-core` to 6.1.60.
+
+* __[maintenance]__
+Update dependency `uuid` to 11.0.3.
+
 ## Version 5.8.13 (2024-11-03)
 
 * __[maintenance]__
