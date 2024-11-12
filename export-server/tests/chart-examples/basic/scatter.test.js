@@ -2,7 +2,7 @@ const assert = require('node:assert');
 const http = require('node:http');
 const { describe, it } = require('node:test');
 
-describe('basic charts #1', () => {
+describe('basic charts, part 1', () => {
   describe('scatter plots', () => {
     it('Line and Scatter Plot', () => {
       const options = {
