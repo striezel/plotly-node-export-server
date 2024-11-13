@@ -2,7 +2,7 @@ const assert = require('node:assert');
 const http = require('node:http');
 const { describe, it } = require('node:test');
 
-describe('financial charts #3', () => {
+describe('financial charts, part 3', () => {
   describe('candlestick charts', () => {
     it('Simple Candlestick Chart', () => {
       const options = {
