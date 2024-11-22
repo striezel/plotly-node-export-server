@@ -88,7 +88,7 @@ exports.render = async function(jsonData, filename, width, height) {
     failure: 'promise-not-resolved'
   };
 
-  await
+  return await
   fs.promises.readFile('./plotly-2.35.2.min.js', 'utf-8')
     .then(win.eval)
     .then(() => win.Plotly.toImage({data: array_data, layout: layout, config: config},
@@ -109,6 +109,4 @@ exports.render = async function(jsonData, filename, width, height) {
       result = { success: false, failure: 'promise-rejected' };
       return result;
     });
-
-  return result;
 };
