@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Version 5.9.0-pre (2024-11-25)
+## Version 5.9.0 (2024-11-25)
 
 * __[improvement]__
 The image rendering process is simplified and does now use less I/O operations.
