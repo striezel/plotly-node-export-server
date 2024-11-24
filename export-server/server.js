@@ -1,6 +1,6 @@
 /*
     Plotly.js offline image export server with Node.js
-    Copyright (C) 2018, 2020, 2021, 2022, 2023  Dirk Stolle
+    Copyright (C) 2018, 2020, 2021, 2022, 2023, 2024  Dirk Stolle
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -124,27 +124,8 @@ const server = http.createServer(function(req, res) {
     const result = await ssr.render(body, filename, req.headers["x-image-width"], req.headers["x-image-height"]);
     if (result.success) {
       res.statusCode = 200; // 200 == OK
-      var stream = fs.createReadStream(result.filename);
-      stream.on('open', function() {
-        res.setHeader('Content-Type', 'image/svg+xml');
-        stream.pipe(res);
-      });
-      stream.on('close', function() {
-        res.end();
-        fs.unlink(result.filename, function(err) {
-          if (err) {
-            console.error('Failed to unlink file ' + result.filename + '! '
-                         + err.toString());
-          }
-        });
-      });
-      stream.on('error', function(err) {
-        res.statusCode = 500; // 500 == Internal Server Error
-        res.setHeader('Content-Type', 'text/plain');
-        res.end('Failed to serve file due to I/O error.\n');
-        console.error('Failed to serve file ' + result.filename + ': '
-                     + err.toString());
-      });
+      res.setHeader('Content-Type', 'image/svg+xml');
+      res.end(result.data);
     } else {
       res.statusCode = 500; // 500 == Internal Server Error
       res.setHeader('Content-Type', 'application/json');

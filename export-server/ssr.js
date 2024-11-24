@@ -31,8 +31,7 @@ const { v4: uuidv4 } = require('uuid');
    Returns:
      object that contains two members:
        success - (boolean) indicates success of the rendering process
-       filename - (string) filename of the output, only present after successful
-                  rendering
+       data    - (string) SVG data, only present after successful rendering
        failure - (string) reason for render failure; only present after failed
                  rendering, may be cryptic and is not necessarily human-friendly
 */
@@ -93,12 +92,8 @@ exports.render = async function(jsonData, filename, width, height) {
     .then(win.eval)
     .then(() => win.Plotly.toImage({data: array_data, layout: layout, config: config},
                                    { format: 'svg', imageDataOnly: true }))
-    .then(function(data) {
-      fs.promises.writeFile(filename, data);
-    })
-    .then(() => {
-      result = { success: true, filename: filename };
-      return result;
+    .then(function(img_data) {
+      return { success: true, data: img_data };
     })
     .catch(function(error) {
       console.log("Error occurred: " + error);
