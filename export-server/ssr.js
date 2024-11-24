@@ -18,15 +18,13 @@
 
 var fs = require('fs');
 const jsdom = require('jsdom');
-const { v4: uuidv4 } = require('uuid');
 
 /* Renders JSON data for a Plotly.js plot into a SVG file.
 
    Parameters:
      jsonData - (string) the JSON data required by Plotly.js
-     filename - (string) desired output file name for the SVG file
-     width    - (number) width of the SVG file in pixels
-     height   - (number) height of the SVG file in pixels
+     width    - (number) width of the SVG image in pixels
+     height   - (number) height of the SVG image in pixels
 
    Returns:
      object that contains two members:
@@ -35,22 +33,11 @@ const { v4: uuidv4 } = require('uuid');
        failure - (string) reason for render failure; only present after failed
                  rendering, may be cryptic and is not necessarily human-friendly
 */
-exports.render = async function(jsonData, filename, width, height) {
-  const unique_id = uuidv4();
-
-  if (!filename) {
-    filename = 'graph-' + unique_id + '.svg';
-  }
+exports.render = async function(jsonData, width, height) {
   if (typeof jsonData !== 'string') {
     return {
       success: false,
       failure: 'json-not-a-string'
-    };
-  }
-  if (typeof filename !== 'string') {
-    return {
-      success: false,
-      failure: 'filename-not-a-string'
     };
   }
 

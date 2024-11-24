@@ -23,7 +23,6 @@ const http = require('http');
 const path = require('path');
 const ssr = require('./ssr.js');
 const url = require('url');
-const { v4: uuidv4 } = require('uuid');
 
 // Use hostname from environment variable HOST, if it is set.
 const hostname = process.env.HOST || 'localhost';
@@ -119,9 +118,8 @@ const server = http.createServer(function(req, res) {
     if (killed) {
       return;
     }
-    // Render file with JSDOM.
-    const filename = 'graph-' + uuidv4() + '.svg';
-    const result = await ssr.render(body, filename, req.headers["x-image-width"], req.headers["x-image-height"]);
+    // Render image with JSDOM.
+    const result = await ssr.render(body, req.headers["x-image-width"], req.headers["x-image-height"]);
     if (result.success) {
       res.statusCode = 200; // 200 == OK
       res.setHeader('Content-Type', 'image/svg+xml');
