@@ -15,6 +15,9 @@ version change in this application.
 * __[improvement]__
 The image rendering process is simplified and does now use less I/O operations.
 
+* __[maintenance]__
+Update dependencies `tldts` + `tldts-core` to 6.1.64.
+
 ## Version 5.8.16 (2024-11-22)
 
 * __[maintenance]__
