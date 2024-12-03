@@ -60,7 +60,9 @@ for the generated plot:
     }
   ],
   "layout": {
-    "title": "Example title"
+    "title": {
+      "text": "Example title"
+    }
   }
 }
 ```
