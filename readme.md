@@ -105,6 +105,33 @@ look like this:
 
 ![Custom size image example](./documentation/graph-5b41aefe-146f-49b6-bcc6-dac42102cad9.svg)
 
+### Adding layout information
+
+Layout information can be added by specifying `data` and `layout` as separate
+members of the `POST`ed JSON. For example, the following JSON uses the
+`layout.title.text` member to set a title for the generated plot:
+
+```
+{
+  "data": [
+    {
+      "x": ["2013-10-04 22:23:00", "2013-11-04 22:23:00", "2013-12-04 22:23:00"],
+      "y": [1, 3, 6],
+      "type": "scatter"
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Example title"
+    }
+  }
+}
+```
+
+The generated image may look like this:
+
+![Image example with layout data for title](./documentation/graph-layout.svg)
+
 ## Troubleshooting
 
 If you encounter problems while trying to generate a plot image, then please
