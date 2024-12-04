@@ -47,8 +47,8 @@ The notable differences are:
 ## Can I also include layout information in my request?
 
 Yes. Just specify `data` and `layout` as separate members of the `POST`ed JSON.
-For example, the following JSON uses the `layout.title` member to set a title
-for the generated plot:
+For example, the following JSON uses the `layout.title.text` member to set a
+title for the generated plot:
 
 ```json
 {
