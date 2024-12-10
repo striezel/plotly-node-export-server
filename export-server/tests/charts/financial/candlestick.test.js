@@ -55,7 +55,9 @@ describe('financial charts, part 3', () => {
                              "rangeslider": {
                                "range": [ "2017-01-03 12:00", "2017-02-15 12:00" ]
                              },
-                             "title": "Date",
+                             "title": {
+                               "text": "Date"
+                             },
                              "type": "date"
                            },
                            "yaxis": {

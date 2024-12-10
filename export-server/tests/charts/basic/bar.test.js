@@ -61,6 +61,7 @@ describe('basic charts, part 3', () => {
       };
 
       const req = http.request(options);
+      // Data taken from https://plotly.com/javascript/bar-charts/#bar-chart-with-hover-text example.
       const payload = `{
                          "data": [
                            {
@@ -81,7 +82,9 @@ describe('basic charts, part 3', () => {
                            }
                          ],
                          "layout": {
-                           "title": "Number of Graphs Made this Week",
+                           "title": {
+                             "text": "Number of Graphs Made this Week"
+                           },
                            "font": {
                              "family": "Raleway, sans-serif"
                            },
@@ -153,7 +156,9 @@ describe('basic charts, part 3', () => {
                            }
                          ],
                          "layout": {
-                           "title": "Least Used Feature"
+                           "title": {
+                             "text": "Least Used Feature"
+                           }
                          }
                        }`;
       req.write(payload);

@@ -224,7 +224,9 @@ describe('basic charts, part 10', () => {
                            }
                          ],
                          "layout": {
-                           "title": "Sankey with manually positioned node",
+                           "title": {
+                             "text": "Sankey with manually positioned node"
+                           },
                            "width": 720,
                            "height": 520
                          }

@@ -108,7 +108,9 @@ describe('basic charts, part 1', () => {
                            "yaxis": {
                              "range": [ 0, 8 ]
                            },
-                           "title": "Data Labels Hover"
+                           "title": {
+                             "text": "Data Labels Hover"
+                           }
                          }
                        }`;
       req.write(payload);
@@ -203,7 +205,9 @@ describe('basic charts, part 1', () => {
                               "color": "grey"
                             }
                           },
-                          "title": "Data Labels on the Plot"
+                          "title": {
+                            "text": "Data Labels on the Plot"
+                          }
                         }
                       }`;
       req.write(payload);
@@ -259,7 +263,9 @@ describe('basic charts, part 1', () => {
                            }
                          ],
                          "layout": {
-                           "title": "Scatter Plot with a Color Dimension"
+                           "title": {
+                             "text": "Scatter Plot with a Color Dimension"
+                           }
                          }
                        }`;
       req.write(payload);
