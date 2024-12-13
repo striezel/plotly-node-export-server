@@ -26,7 +26,7 @@ describe('basic charts, part 11', () => {
       req.end();
 
       req.on('response', (response) => {
-        // Point cloud traces seem to rely on WebGL, and that is not available
+        // Point cloud traces rely on WebGL, and that is not available
         // in JSDOM, so this fails.
         assert.strictEqual(500, response.statusCode);
         let body = '';
@@ -39,37 +39,14 @@ describe('basic charts, part 11', () => {
       });
     });
 
-    // TODO: Styled Point Cloud - https://plotly.com/javascript/pointcloud/#styled-point-cloud
-    // TODO: Advanced Point Cloud - https://plotly.com/javascript/pointcloud/#advanced-point-cloud
-
-
-/*
-    it('request with different data', () => {
-      const options = {
-        port: 3000,
-        host: 'localhost',
-        method: 'POST'
-      };
-
-      const req = http.request(options);
-      const payload = '{ "x": ["2013-10-04 22:23:00", "2013-11-04 22:23:00", "2013-12-04 22:23:00"], "y": [1, 3, 6], "type": "scatter" }';
-      req.write(payload);
-      req.end();
-
-      req.on('response', (response) => {
-        assert.strictEqual(200, response.statusCode);
-        let body = '';
-        response.on('data', (chunk) => {
-          body += chunk;
-        });
-        response.on('end', () => {
-          assert.ok(body.startsWith('<svg'));
-          assert.ok(body.endsWith('</svg>'));
-          assert.ok(body.indexOf('width="700"') > 0);
-          assert.ok(body.indexOf('height="400"') > 0);
-        });
-      });
-    });
-    */
+    // Note: The remaining examples, namely:
+    //
+    //  * Styled Point Cloud - https://plotly.com/javascript/pointcloud/#styled-point-cloud
+    //  * Advanced Point Cloud - https://plotly.com/javascript/pointcloud/#advanced-point-cloud
+    //
+    // are not tested explicitly, because they would also fail. Furthermore, the
+    // pointcloud trace type is deprecated and will be removed on plotly.js v3.
+    // See <https://github.com/plotly/plotly.js/pull/7213> for the PR that
+    // removes it.
   });
 });
