@@ -468,6 +468,136 @@ describe('scientific charts, part 1', () => {
     });
 
     // TODO: Connect the Gaps between Null Values in the Z Matrix - https://plotly.com/javascript/contour-plots/#connect-the-gaps-between-null-values-in-the-z-matrix
+    it('Connect the Gaps between Null Values in the Z Matrix (original example)', () => {
+      const options = {
+        port: 3000,
+        host: 'localhost',
+        method: 'POST'
+      };
+
+      const req = http.request(options);
+      // Data taken from https://plotly.com/javascript/contour-plots/#connect-the-gaps-between-null-values-in-the-z-matrix example.
+      const payload = `{
+                         "data": [
+                           {
+                             "z": [ [ null, null, null, 12, 13, 14, 15, 16 ],
+                                    [ null, 1, null, 11, null, null, null, 17 ],
+                                    [ null, 2, 6, 7, null, null, null, 18 ],
+                                    [ null, 3, null, 8, null, null, null, 19 ],
+                                    [ 5, 4, 10, 9, null, null, null, 20 ],
+                                    [ null, null, null, 27, null, null, null, 21 ],
+                                    [ null, null, null, 26, 25, 24, 23, 22 ]
+                                  ],
+                             "type": "contour",
+                             "showscale": false,
+                             "xaxis": "x1",
+                             "yaxis": "y1"
+                           },
+                           {
+                             "z": [ [ null, null, null, 12, 13, 14, 15, 16 ],
+                                    [ null, 1, null, 11, null, null, null, 17 ],
+                                    [ null, 2, 6, 7, null, null, null, 18 ],
+                                    [ null, 3, null, 8, null, null, null, 19 ],
+                                    [ 5, 4, 10, 9, null, null, null, 20 ],
+                                    [ null, null, null, 27, null, null, null, 21 ],
+                                    [ null, null, null, 26, 25, 24, 23, 22 ]
+                                  ],
+                             "connectgaps": true,
+                             "type": "contour",
+                             "showscale": false,
+                             "xaxis": "x2",
+                             "yaxis": "y2"
+                           },
+                           {
+                             "z": [ [ null, null, null, 12, 13, 14, 15, 16 ],
+                                    [ null, 1, null, 11, null, null, null, 17 ],
+                                    [ null, 2, 6, 7, null, null, null, 18 ],
+                                    [ null, 3, null, 8, null, null, null, 19 ],
+                                    [ 5, 4, 10, 9, null, null, null, 20 ],
+                                    [ null, null, null, 27, null, null, null, 21 ],
+                                    [ null, null, null, 26, 25, 24, 23, 22 ]
+                                  ],
+                             "zsmooth": "best",
+                             "type": "heatmap",
+                             "showscale": false,
+                             "xaxis": "x3",
+                             "yaxis": "y3"
+                           },
+                           {
+                             "z": [ [ null, null, null, 12, 13, 14, 15, 16 ],
+                                    [ null, 1, null, 11, null, null, null, 17 ],
+                                    [ null, 2, 6, 7, null, null, null, 18 ],
+                                    [ null, 3, null, 8, null, null, null, 19 ],
+                                    [ 5, 4, 10, 9, null, null, null, 20 ],
+                                    [ null, null, null, 27, null, null, null, 21 ],
+                                    [ null, null, null, 26, 25, 24, 23, 22 ]
+                                  ],
+                             "zsmooth": "best",
+                             "type": "heatmap",
+                             "showscale": false,
+                             "connectgaps": true,
+                             "xaxis": "x4",
+                             "yaxis": "y4"
+                           }
+                         ],
+                         "layout": {
+                           "title": {
+                             "text": "Connect the Gaps Between Null Values in the Z Matrix"
+                           },
+                           "xaxis": {
+                             "domain": [ 0, 0.45 ],
+                             "anchor": "y1"
+                           },
+                           "yaxis": {
+                             "domain": [ 0.55, 1 ],
+                             "anchor": "x1"
+                           },
+                           "xaxis2": {
+                             "domain": [ 0.55, 1 ],
+                             "anchor": "y2"
+                           },
+                           "yaxis2": {
+                             "domain": [ 0.55, 1 ],
+                             "anchor": "x2"
+                           },
+                           "xaxis3": {
+                             "domain": [ 0, 0.45 ],
+                             "anchor": "y3"
+                           },
+                           "yaxis3": {
+                             "domain": [ 0, 0.45 ],
+                             "anchor": "x3"
+                           },
+                           "xaxis4": {
+                             "domain": [ 0.55, 1 ],
+                             "anchor": "y4"
+                           },
+                           "yaxis4": {
+                             "domain": [ 0, 0.45 ],
+                             "anchor": "x4"
+                           }
+                         }
+                       }`;
+      req.write(payload);
+      req.end();
+
+      req.on('response', (response) => {
+        assert.strictEqual(500, response.statusCode);
+        let body = '';
+        response.on('data', (chunk) => {
+          body += chunk;
+        });
+        response.on('end', () => {
+          // Browser-based answer is an SVG image with some embedded PNG image data for the heatmap traces.
+
+          // Currently, the server cannot handle that and returns HTTP status code 500.
+          // Reasons seem to be the heatmap colouring.
+          assert.ok(body == '{"success":false,"failure":"promise-rejected"}');
+        });
+      });
+    });
+
+    // TODO: Connect the Gaps between Null Values in the Z Matrix - https://plotly.com/javascript/contour-plots/#connect-the-gaps-between-null-values-in-the-z-matrix - but no heatmap
 
     it('Smoothing Contour Lines', () => {
       const options = {
