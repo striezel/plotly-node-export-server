@@ -18,8 +18,7 @@ describe('scientific charts, part 2', () => {
                            {
                              "z": [ [ 1, 20, 30 ],
                                     [ 20, 1, 60 ],
-                                    [ 30, 60, 1 ]
-                                  ],
+                                    [ 30, 60, 1 ] ],
                              "type": "heatmap"
                            }
                          ],
@@ -45,7 +44,55 @@ describe('scientific charts, part 2', () => {
       });
     });
 
-    // TODO: Heatmap with Categorical Axis Labels - https://plotly.com/javascript/heatmaps/#heatmap-with-categorical-axis-labels
+    it('Heatmap with Categorical Axis Labels', () => {
+      const options = {
+        port: 3000,
+        host: 'localhost',
+        method: 'POST'
+      };
+
+      const req = http.request(options);
+      // Data taken from https://plotly.com/javascript/heatmaps/#heatmap-with-categorical-axis-labels example.
+      const payload = `{
+                         "data": [
+                           {
+                             "z": [ [ 1, null, 30, 50, 1 ],
+                                    [ 20, 1, 60, 80, 30 ],
+                                    [ 30, 60, 1, -10, 20 ] ],
+                             "x": [
+                               "Monday",
+                               "Tuesday",
+                               "Wednesday",
+                               "Thursday",
+                               "Friday"
+                             ],
+                             "y": [ "Morning", "Afternoon", "Evening" ],
+                             "type": "heatmap",
+                             "hoverongaps": false
+                           }
+                         ],
+                         "layout": {}
+                       }`;
+      req.write(payload);
+      req.end();
+
+      req.on('response', (response) => {
+        assert.strictEqual(500, response.statusCode);
+        let body = '';
+        response.on('data', (chunk) => {
+          body += chunk;
+        });
+        response.on('end', () => {
+          // Browser-based answer is an SVG with embedded binary PNG image data
+          // (due to heatmap colouring).
+
+          // Currently, the server cannot handle that and returns HTTP status code 500.
+          // Reasons seem to be the heatmap colouring and the labels.
+          assert.ok(body == '{"success":false,"failure":"promise-rejected"}');
+        });
+      });
+    });
+
     // TODO: Annotated Heatmap - https://plotly.com/javascript/heatmaps/#annotated-heatmap
     // TODO: Heatmap with Unequal Block Sizes - https://plotly.com/javascript/heatmaps/#heatmap-with-unequal-block-sizes
 
