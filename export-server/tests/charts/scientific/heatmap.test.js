@@ -38,7 +38,6 @@ describe('scientific charts, part 2', () => {
           // (due to heatmap colouring).
 
           // Currently, the server cannot handle that and returns HTTP status code 500.
-          // Reasons seem to be the heatmap colouring and the labels.
           assert.ok(body == '{"success":false,"failure":"promise-rejected"}');
         });
       });
@@ -87,13 +86,295 @@ describe('scientific charts, part 2', () => {
           // (due to heatmap colouring).
 
           // Currently, the server cannot handle that and returns HTTP status code 500.
-          // Reasons seem to be the heatmap colouring and the labels.
           assert.ok(body == '{"success":false,"failure":"promise-rejected"}');
         });
       });
     });
 
-    // TODO: Annotated Heatmap - https://plotly.com/javascript/heatmaps/#annotated-heatmap
+    it('Annotated Heatmap', () => {
+      const options = {
+        port: 3000,
+        host: 'localhost',
+        method: 'POST'
+      };
+
+      const req = http.request(options);
+      // Data taken from https://plotly.com/javascript/heatmaps/#annotated-heatmap example.
+      const payload = `{
+                         "data": [
+                           {
+                             "x": [ "A", "B", "C", "D", "E" ],
+                             "y": [ "W", "X", "Y", "Z" ],
+                             "z": [ [ 0, 0, 0.75, 0.75, 0 ],
+                                    [ 0, 0, 0.75, 0.75, 0 ],
+                                    [ 0.75, 0.75, 0.75, 0.75, 0.75 ],
+                                    [ 0, 0, 0, 0.75, 0 ] ],
+                             "type": "heatmap",
+                             "colorscale": [
+                               [ 0, "#3D9970" ],
+                               [ 1, "#001f3f" ]
+                             ],
+                             "showscale": false
+                           }
+                         ],
+                         "layout": {
+                           "title": {
+                             "text": "Annotated Heatmap"
+                           },
+                           "annotations": [
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "A",
+                               "y": "W",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "B",
+                               "y": "W",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "C",
+                               "y": "W",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "D",
+                               "y": "W",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "E",
+                               "y": "W",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "A",
+                               "y": "X",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "B",
+                               "y": "X",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "C",
+                               "y": "X",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "D",
+                               "y": "X",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "E",
+                               "y": "X",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "A",
+                               "y": "Y",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "B",
+                               "y": "Y",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "C",
+                               "y": "Y",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "D",
+                               "y": "Y",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "E",
+                               "y": "Y",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "A",
+                               "y": "Z",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "B",
+                               "y": "Z",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "C",
+                               "y": "Z",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "D",
+                               "y": "Z",
+                               "text": 0.75,
+                               "font": {
+                                 "color": "white"
+                               },
+                               "showarrow": false
+                             },
+                             {
+                               "xref": "x1",
+                               "yref": "y1",
+                               "x": "E",
+                               "y": "Z",
+                               "text": 0,
+                               "font": {
+                                 "color": "black"
+                               },
+                               "showarrow": false
+                             }
+                           ],
+                           "xaxis": {
+                             "ticks": "",
+                             "side": "top"
+                           },
+                           "yaxis": {
+                             "ticks": "",
+                             "ticksuffix": " ",
+                             "width": 700,
+                             "height": 700,
+                             "autosize": false
+                           }
+                         }
+                       }`;
+      req.write(payload);
+      req.end();
+
+      req.on('response', (response) => {
+        assert.strictEqual(500, response.statusCode);
+        let body = '';
+        response.on('data', (chunk) => {
+          body += chunk;
+        });
+        response.on('end', () => {
+          // Browser-based answer is an SVG with embedded binary PNG image data
+          // (due to heatmap colouring).
+
+          // Currently, the server cannot handle that and returns HTTP status code 500.
+          assert.ok(body == '{"success":false,"failure":"promise-rejected"}');
+        });
+      });
+    });
+
     // TODO: Heatmap with Unequal Block Sizes - https://plotly.com/javascript/heatmaps/#heatmap-with-unequal-block-sizes
 
 /*
