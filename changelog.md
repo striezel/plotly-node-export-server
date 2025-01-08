@@ -15,6 +15,12 @@ version change in this application.
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.71.
 
+* __[maintenance]__
+The lock file package-lock.json is converted from version 2 to version 3.
+Version 3 has been supported since (at least) Node.js 16 and is the default in
+Node.js 18. Since this project already requires Node.js 18 or later it is save
+to convert the file to the newer version.
+
 ## Version 5.9.3 (2024-12-21)
 
 * __[maintenance]__
