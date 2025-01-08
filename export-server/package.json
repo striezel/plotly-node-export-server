@@ -1,6 +1,6 @@
 {
   "name": "plotly-node-export-server",
-  "version": "5.9.3",
+  "version": "5.9.4-pre",
   "description": "Plotly.js Node.js export server",
   "repository": {
     "url": "https://gitlab.com/striezel/plotly-node-export-server.git",
