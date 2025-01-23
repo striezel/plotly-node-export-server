@@ -10,6 +10,11 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 5.9.5-pre (2025-01-23)
+
+* __[maintenance]__
+Update dependencies `tldts` + `tldts-core` to 6.1.74.
+
 ## Version 5.9.4 (2025-01-08)
 
 * __[maintenance]__
