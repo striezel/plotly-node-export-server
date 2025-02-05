@@ -12,6 +12,13 @@ version change in this application.
 
 ## Version NEXT (2025-02-??)
 
+* __[breaking change]__ + __[maintenance]__
+The version of Plotly.js is bumped from 2.35.3 to 3.0.0.
+The new version contains some new features and fixes. It also contains some
+breaking changes, for example some deprecated features have been removed. For
+details on those see
+[the changelog of Plotly.js](https://github.com/plotly/plotly.js/blob/master/CHANGELOG.md#300----2025-01-27).
+
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.76.
 
