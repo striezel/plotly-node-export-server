@@ -75,7 +75,7 @@ exports.render = async function(jsonData, width, height) {
   };
 
   return await
-  fs.promises.readFile('./plotly-3.0.0.min.js', 'utf-8')
+  fs.promises.readFile('./plotly-3.0.1.min.js', 'utf-8')
     .then(win.eval)
     .then(() => win.Plotly.toImage({data: array_data, layout: layout, config: config},
                                    { format: 'svg', imageDataOnly: true }))
