@@ -24,6 +24,9 @@ Update dependency `@csstools/css-color-parser` to 3.0.8.
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.78.
 
+* __[maintenance]__
+Update dependency `ws` to 8.18.1.
+
 ## Version 6.0.2 (2025-02-17)
 
 * __[maintenance]__
