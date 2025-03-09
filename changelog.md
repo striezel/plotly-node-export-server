@@ -13,6 +13,9 @@ version change in this application.
 ## Version 6.0.5-pre (2025-03-??)
 
 * __[maintenance]__
+Update dependency `nwsapi` to 2.2.18.
+
+* __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.83.
 
 ## Version 6.0.4 (2025-03-01)
