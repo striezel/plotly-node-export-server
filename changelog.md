@@ -18,6 +18,9 @@ Update dependency `nwsapi` to 2.2.18.
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.84.
 
+* __[maintenance]__
+Update dependency `tr` to 5.1.0.
+
 ## Version 6.0.4 (2025-03-01)
 
 * __[maintenance]__
