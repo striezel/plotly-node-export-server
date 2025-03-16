@@ -13,6 +13,12 @@ version change in this application.
 ## Version 6.0.5-pre (2025-03-??)
 
 * __[maintenance]__
+Update dependency `@asamuzakjp/css-color` to 3.1.1.
+
+* __[maintenance]__
+Update dependency `cssstyle` to 4.3.0.
+
+* __[maintenance]__
 Update dependency `nwsapi` to 2.2.18.
 
 * __[maintenance]__
