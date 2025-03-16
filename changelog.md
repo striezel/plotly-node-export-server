@@ -21,6 +21,9 @@ Update dependencies `tldts` + `tldts-core` to 6.1.84.
 * __[maintenance]__
 Update dependency `tr` to 5.1.0.
 
+* __[maintenance]__
+Update dependency `whatwg-url` to 14.2.0.
+
 ## Version 6.0.4 (2025-03-01)
 
 * __[maintenance]__
