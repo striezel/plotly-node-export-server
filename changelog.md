@@ -18,6 +18,9 @@ Update dependency `@asamuzakjp/css-color` to 3.1.2.
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.86.
 
+* __[maintenance]__
+Update dependency `tr46` to 5.1.1.
+
 ## Version 6.0.6 (2025-04-06)
 
 * __[maintenance]__
