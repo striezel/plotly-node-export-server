@@ -44,7 +44,7 @@ Update dependency `nwsapi` to 2.2.18.
 Update dependencies `tldts` + `tldts-core` to 6.1.84.
 
 * __[maintenance]__
-Update dependency `tr` to 5.1.0.
+Update dependency `tr46` to 5.1.0.
 
 * __[maintenance]__
 Update dependency `whatwg-url` to 14.2.0.
