@@ -13,7 +13,13 @@ version change in this application.
 ## Version 6.?.? (2025-04-??)
 
 * __[maintenance]__
-Update dependency `@asamuzakjp/css-color` to 3.1.2.
+Update dependency `@asamuzakjp/css-color` to 3.1.3.
+
+* __[maintenance]__
+Update dependency `@csstools/css-calc` to 2.1.3.
+
+* __[maintenance]__
+Update dependency `@csstools/css-color-parser` to 3.0.9.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.86.
