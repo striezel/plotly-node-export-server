@@ -16,6 +16,9 @@ version change in this application.
 Update dependency `@asamuzakjp/css-color` to 3.1.3.
 
 * __[maintenance]__
+Update dependency `cssstyle` to 4.3.1.
+
+* __[maintenance]__
 Update dependency `@csstools/css-calc` to 2.1.3.
 
 * __[maintenance]__
