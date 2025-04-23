@@ -25,6 +25,12 @@ Update dependency `@csstools/css-calc` to 2.1.3.
 Update dependency `@csstools/css-color-parser` to 3.0.9.
 
 * __[maintenance]__
+Update dependency `entities` to 6.0.0.
+
+* __[maintenance]__
+Update dependency `parse5` to 7.3.0.
+
+* __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 6.1.86.
 
 * __[maintenance]__
