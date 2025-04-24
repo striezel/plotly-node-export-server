@@ -13,7 +13,7 @@ version change in this application.
 ## Version 6.?.? (2025-04-??)
 
 * __[maintenance]__
-Update dependency `@asamuzakjp/css-color` to 3.1.3.
+Update dependency `@asamuzakjp/css-color` to 3.1.4.
 
 * __[maintenance]__
 Update dependency `cssstyle` to 4.3.1.
