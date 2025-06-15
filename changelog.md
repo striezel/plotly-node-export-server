@@ -13,7 +13,13 @@ version change in this application.
 ## Version 6.0.8-pre  (2025-06-13)
 
 * __[maintenance]__
+Update dependency `@csstools/css-calc` to 2.1.4.
+
+* __[maintenance]__
 Update dependency `@csstools/css-tokenizer` to 3.0.4.
+
+* __[maintenance]__
+Update dependency `@csstools/css-parser-algorithms` to 3.0.5.
 
 * __[maintenance]__
 Update dependency `debug` to 4.4.1.
