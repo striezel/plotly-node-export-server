@@ -13,6 +13,9 @@ version change in this application.
 ## Version 6.0.8-pre  (2025-06-13)
 
 * __[maintenance]__
+Update dependency `@asamuzakjp/css-color` to 3.2.0.
+
+* __[maintenance]__
 Update dependency `@csstools/css-calc` to 2.1.4.
 
 * __[maintenance]__
