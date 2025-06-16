@@ -7,11 +7,7 @@ updates:
     directory: "/export-server"
     schedule:
       interval: "daily"
-    reviewers:
-      - "striezel"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    reviewers:
-      - "striezel"
