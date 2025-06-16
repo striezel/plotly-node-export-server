@@ -16,6 +16,9 @@ version change in this application.
 Update dependency `@csstools/css-calc` to 2.1.4.
 
 * __[maintenance]__
+Update dependency `@csstools/css-color-parser` to 3.0.10.
+
+* __[maintenance]__
 Update dependency `@csstools/css-tokenizer` to 3.0.4.
 
 * __[maintenance]__
