@@ -34,7 +34,7 @@ Update dependency `debug` to 4.4.1.
 Update dependency `entities` to 6.0.1.
 
 * __[maintenance]__
-Update dependency `ws` to 8.18.2.
+Update dependency `ws` to 8.18.3.
 
 ## Version 6.0.7 (2025-04-26)
 
