@@ -13,6 +13,9 @@ version change in this application.
 ## Next Version (2025-07-??)
 
 * __[maintenance]__
+Update dependency `cssstyle` to 4.6.0.
+
+* __[maintenance]__
 Update dependency `nwsapi` to 2.2.21.
 
 ## Version 6.0.8  (2025-07-26)
