@@ -10,7 +10,12 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Next Version (2025-07-??)
+## Version 6.0.9 (2025-07-26)
+
+* __[maintenance]__
+The version of Plotly.js is bumped from 3.0.2 to 3.0.3.
+The new version contains some minor changes. For details on those see
+[the changelog of Plotly.js](https://github.com/plotly/plotly.js/blob/master/CHANGELOG.md#303----2025-07-23).
 
 * __[maintenance]__
 Update dependency `cssstyle` to 4.6.0.
