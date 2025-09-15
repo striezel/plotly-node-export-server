@@ -13,6 +13,12 @@ version change in this application.
 ## Next Version (2025-09-??)
 
 * __[maintenance]__
+Update dependency `@csstools/color-helpers` to 5.1.0.
+
+* __[maintenance]__
+Update dependency `@csstools/css-color-parser` to 3.1.0.
+
+* __[maintenance]__
 Update dependency `debug` to 4.4.3.
 
 * __[maintenance]__
