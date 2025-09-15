@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Next Version (2025-09-??)
+## Version 6.0.10 (2025-09-16)
 
 * __[maintenance]__
 Update dependency `@csstools/color-helpers` to 5.1.0.
