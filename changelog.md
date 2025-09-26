@@ -10,6 +10,14 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
+## Version 7.0.0-pre (2025-09-??)
+
+* __[maintenance]__
+Update dependency `jsdom` to 27.0.0.
+
+As part of the `jsdom` update, `cssstyle` is updated to 5.3.0 and `data-urls`
+is updated to 6.0.0.
+
 ## Version 6.0.10 (2025-09-16)
 
 * __[maintenance]__
