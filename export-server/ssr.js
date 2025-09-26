@@ -64,7 +64,7 @@ exports.render = async function(jsonData, width, height) {
   const config = parsed_data.config || {};
 
   const virtual_console = new jsdom.VirtualConsole();
-  virtual_console.sendTo(console);
+  virtual_console.forwardTo(console);
   const win = new jsdom.JSDOM('', { runScripts: 'dangerously', virtual_console }).window;
   win.HTMLCanvasElement.prototype.getContext = function() { return null; };
   win.URL.createObjectURL = function() { return null; };
