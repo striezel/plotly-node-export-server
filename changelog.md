@@ -29,6 +29,12 @@ Update dependency `lru-cache` to 11.2.2.
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.16.
 
+* __[maintenance]__
+Update dependency `tr46` to 6.0.0.
+
+* __[maintenance]__
+Update dependency `whatwg-url` to 15.1.0.
+
 ## Version 6.0.10 (2025-09-16)
 
 * __[maintenance]__
