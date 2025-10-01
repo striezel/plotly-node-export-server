@@ -20,8 +20,8 @@ life, so users of those versions should upgrade to newer versions anyway.
 * __[maintenance]__
 Update dependency `jsdom` to 27.0.0.
 
-As part of the `jsdom` update, `cssstyle` is updated to 5.3.1 and `data-urls`
-is updated to 6.0.0.
+  As part of the `jsdom` update, `cssstyle` is updated to 5.3.1 and `data-urls`
+  is updated to 6.0.0.
 
 * __[maintenance]__
 Update dependency `@asamuzakjp/css-color` to 4.0.5.
@@ -230,8 +230,8 @@ Update dependencies `tldts` + `tldts-core` to 6.1.75.
 * __[maintenance]__
 Update dependency `jsdom` to 26.0.0.
 
-As part of the `jsdom` update, `cssstyle` is updated to 4.2.1 and `rrweb-cssom`
-is updated to 0.8.0.
+  As part of the `jsdom` update, `cssstyle` is updated to 4.2.1 and
+  `rrweb-cssom` is updated to 0.8.0.
 
 ## Version 5.9.5 (2025-01-23)
 
