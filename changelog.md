@@ -24,6 +24,9 @@ As part of the `jsdom` update, `cssstyle` is updated to 5.3.0 and `data-urls`
 is updated to 6.0.0.
 
 * __[maintenance]__
+Update dependency `lru-cache` to 11.2.2.
+
+* __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.16.
 
 ## Version 6.0.10 (2025-09-16)
