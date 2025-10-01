@@ -20,7 +20,7 @@ life, so users of those versions should upgrade to newer versions anyway.
 * __[maintenance]__
 Update dependency `jsdom` to 27.0.0.
 
-As part of the `jsdom` update, `cssstyle` is updated to 5.3.0 and `data-urls`
+As part of the `jsdom` update, `cssstyle` is updated to 5.3.1 and `data-urls`
 is updated to 6.0.0.
 
 * __[maintenance]__
