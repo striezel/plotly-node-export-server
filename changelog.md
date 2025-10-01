@@ -27,6 +27,9 @@ is updated to 6.0.0.
 Update dependency `@asamuzakjp/css-color` to 4.0.5.
 
 * __[maintenance]__
+Update dependency `@asamuzakjp/dom-selector` to 6.5.7.
+
+* __[maintenance]__
 Update dependency `lru-cache` to 11.2.2.
 
 * __[maintenance]__
