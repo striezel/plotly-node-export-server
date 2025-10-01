@@ -24,6 +24,9 @@ As part of the `jsdom` update, `cssstyle` is updated to 5.3.1 and `data-urls`
 is updated to 6.0.0.
 
 * __[maintenance]__
+Update dependency `@asamuzakjp/css-color` to 4.0.5.
+
+* __[maintenance]__
 Update dependency `lru-cache` to 11.2.2.
 
 * __[maintenance]__
