@@ -11,7 +11,7 @@ on the Plotly servers.
 
 This application needs one prerequisite:
 
-* Node.js 18 or later (preferably the latest LTS version)
+* Node.js 20 or later (preferably the latest LTS version)
 
 ### Installation of Node.js
 

@@ -12,6 +12,11 @@ version change in this application.
 
 ## Version 7.0.0-pre (2025-09-??)
 
+* __[breaking change]__
+__Support for Node.js 19 and older versions is dropped.__ The minimum required
+version is now Node.js 20. Node.js versions before 20 have reached their end of
+life, so users of those versions should upgrade to newer versions anyway.
+
 * __[maintenance]__
 Update dependency `jsdom` to 27.0.0.
 
