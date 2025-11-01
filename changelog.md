@@ -18,6 +18,9 @@ Update dependency `@asamuzakjp/dom-selector` to 6.7.4.
 * __[maintenance]__
 Update dependency `cssstyle` to 5.3.2.
 
+* __[maintenance]__
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.15.
+
 ## Version 7.0.2 (2025-10-23)
 
 * __[maintenance]__
