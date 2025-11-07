@@ -13,6 +13,9 @@ version change in this application.
 ## Next Version (2025-11-??)
 
 * __[maintenance]__
+Update dependency `@acemir/cssom` to 0.9.23.
+
+* __[maintenance]__
 Update dependency `@asamuzakjp/dom-selector` to 6.7.4.
 
 * __[maintenance]__
