@@ -19,10 +19,10 @@ Update dependency `@acemir/cssom` to 0.9.23.
 Update dependency `@asamuzakjp/dom-selector` to 6.7.4.
 
 * __[maintenance]__
-Update dependency `cssstyle` to 5.3.2.
+Update dependency `cssstyle` to 5.3.3.
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.15.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.16.
 
 * __[maintenance]__
 Update dependency `jsdom` to 27.1.0.
