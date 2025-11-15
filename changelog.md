@@ -25,7 +25,7 @@ Update dependency `cssstyle` to 5.3.3.
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.16.
 
 * __[maintenance]__
-Update dependency `jsdom` to 27.1.0.
+Update dependency `jsdom` to 27.2.0.
 
 ## Version 7.0.2 (2025-10-23)
 
