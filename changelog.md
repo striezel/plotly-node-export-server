@@ -13,7 +13,7 @@ version change in this application.
 ## Next Version (2025-11-??)
 
 * __[maintenance]__
-Update dependency `@acemir/cssom` to 0.9.23.
+Update dependency `@acemir/cssom` to 0.9.28.
 
 * __[maintenance]__
 Update dependency `@asamuzakjp/css-color` to 4.1.0.
@@ -25,7 +25,7 @@ Update dependency `@asamuzakjp/dom-selector` to 6.7.6.
 Update dependency `cssstyle` to 5.3.3.
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.16.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.20.
 
 * __[maintenance]__
 Update dependency `jsdom` to 27.2.0.
