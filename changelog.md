@@ -27,6 +27,9 @@ Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.16.
 * __[maintenance]__
 Update dependency `jsdom` to 27.2.0.
 
+* __[maintenance]__
+Update dependencies `tldts` + `tldts-core` to 7.0.19.
+
 ## Version 7.0.2 (2025-10-23)
 
 * __[maintenance]__
