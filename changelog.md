@@ -22,7 +22,7 @@ Update dependency `@asamuzakjp/css-color` to 4.1.1.
 Update dependency `@asamuzakjp/dom-selector` to 6.7.6.
 
 * __[maintenance]__
-Update dependency `cssstyle` to 5.3.3.
+Update dependency `cssstyle` to 5.3.5.
 
 * __[maintenance]__
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.22.
