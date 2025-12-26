@@ -28,7 +28,10 @@ Update dependency `cssstyle` to 5.3.5.
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.22.
 
 * __[maintenance]__
-Update dependency `jsdom` to 27.3.0.
+Update dependency `html-encoding-sniffer` to 6.0.0.
+
+* __[maintenance]__
+Update dependency `jsdom` to 27.4.0.
 
 * __[maintenance]__
 Update dependency `lru-cache` to 11.2.4.
