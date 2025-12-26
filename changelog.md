@@ -13,7 +13,7 @@ version change in this application.
 ## Next Version (2025-11-??)
 
 * __[maintenance]__
-Update dependency `@acemir/cssom` to 0.9.29.
+Update dependency `@acemir/cssom` to 0.9.30.
 
 * __[maintenance]__
 Update dependency `@asamuzakjp/css-color` to 4.1.1.
