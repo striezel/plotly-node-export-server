@@ -28,6 +28,9 @@ Update dependency `cssstyle` to 5.3.5.
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.22.
 
 * __[maintenance]__
+Update dependency `@exodus/bytes` to 1.8.0.
+
+* __[maintenance]__
 Update dependency `html-encoding-sniffer` to 6.0.0.
 
 * __[maintenance]__
@@ -38,6 +41,9 @@ Update dependency `lru-cache` to 11.2.4.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.19.
+
+* __[maintenance]__
+Update dependency `webidl-conversions` to 8.0.1.
 
 ## Version 7.0.2 (2025-10-23)
 
