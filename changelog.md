@@ -13,7 +13,7 @@ version change in this application.
 ## Next Version (2025-11-??)
 
 * __[maintenance]__
-Update dependency `@acemir/cssom` to 0.9.30.
+Update dependency `@acemir/cssom` to 0.9.31.
 
 * __[maintenance]__
 Update dependency `@asamuzakjp/css-color` to 4.1.1.
@@ -44,6 +44,9 @@ Update dependencies `tldts` + `tldts-core` to 7.0.19.
 
 * __[maintenance]__
 Update dependency `webidl-conversions` to 8.0.1.
+
+* __[maintenance]__
+Update dependency `ws` to 8.19.0.
 
 ## Version 7.0.2 (2025-10-23)
 
