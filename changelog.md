@@ -28,7 +28,7 @@ Update dependency `cssstyle` to 5.3.5.
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.25.
 
 * __[maintenance]__
-Update dependency `@exodus/bytes` to 1.8.0.
+Update dependency `@exodus/bytes` to 1.9.0.
 
 * __[maintenance]__
 Update dependency `html-encoding-sniffer` to 6.0.0.
