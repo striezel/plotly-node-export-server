@@ -43,7 +43,7 @@ Update dependency `jsdom` to 27.4.0.
 Update dependency `lru-cache` to 11.2.4.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.0.19.
+Update dependencies `tldts` + `tldts-core` to 7.0.21.
 
 * __[maintenance]__
 Update dependency `webidl-conversions` to 8.0.1.
