@@ -25,13 +25,13 @@ Update dependency `@asamuzakjp/dom-selector` to 6.7.7.
 Update dependency `cssstyle` to 5.3.5.
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.25.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.26.
 
 * __[maintenance]__
 Update dependency `data-urls` to 6.0.1.
 
 * __[maintenance]__
-Update dependency `@exodus/bytes` to 1.9.0.
+Update dependency `@exodus/bytes` to 1.10.0.
 
 * __[maintenance]__
 Update dependency `html-encoding-sniffer` to 6.0.0.
