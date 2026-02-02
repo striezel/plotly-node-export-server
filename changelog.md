@@ -31,7 +31,7 @@ Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.26.
 Update dependency `data-urls` to 6.0.1.
 
 * __[maintenance]__
-Update dependency `@exodus/bytes` to 1.10.0.
+Update dependency `@exodus/bytes` to 1.11.0.
 
 * __[maintenance]__
 Update dependency `html-encoding-sniffer` to 6.0.0.
