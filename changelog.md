@@ -19,7 +19,7 @@ Update dependency `@acemir/cssom` to 0.9.31.
 Update dependency `@asamuzakjp/css-color` to 4.1.1.
 
 * __[maintenance]__
-Update dependency `@asamuzakjp/dom-selector` to 6.7.7.
+Update dependency `@asamuzakjp/dom-selector` to 6.7.8.
 
 * __[maintenance]__
 Update dependency `cssstyle` to 5.3.5.
