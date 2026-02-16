@@ -40,7 +40,7 @@ Update dependency `html-encoding-sniffer` to 6.0.0.
 Update dependency `jsdom` to 27.4.0.
 
 * __[maintenance]__
-Update dependency `lru-cache` to 11.2.5.
+Update dependency `lru-cache` to 11.2.6.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.23.
