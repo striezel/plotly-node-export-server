@@ -16,7 +16,7 @@ version change in this application.
 Update dependency `@acemir/cssom` to 0.9.31.
 
 * __[maintenance]__
-Update dependency `@asamuzakjp/css-color` to 4.1.1.
+Update dependency `@asamuzakjp/css-color` to 4.1.2.
 
 * __[maintenance]__
 Update dependency `@asamuzakjp/dom-selector` to 6.7.8.
@@ -25,7 +25,22 @@ Update dependency `@asamuzakjp/dom-selector` to 6.7.8.
 Update dependency `cssstyle` to 5.3.5.
 
 * __[maintenance]__
+Update dependency `@csstools/color-helpers` to 6.0.1.
+
+* __[maintenance]__
+Update dependency `@csstools/color-calc` to 3.1.1.
+
+* __[maintenance]__
+Update dependency `@csstools/css-color-parser` to 4.0.1.
+
+* __[maintenance]__
+Update dependency `@csstools/css-parser-algorithms` to 4.0.0.
+
+* __[maintenance]__
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.26.
+
+* __[maintenance]__
+Update dependency `@csstools/css-tokenizer` to 4.0.0.
 
 * __[maintenance]__
 Update dependency `data-urls` to 6.0.1.
