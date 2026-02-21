@@ -25,13 +25,13 @@ Update dependency `@asamuzakjp/dom-selector` to 6.8.1.
 Update dependency `cssstyle` to 5.3.5.
 
 * __[maintenance]__
-Update dependency `@csstools/color-helpers` to 6.0.1.
+Update dependency `@csstools/color-helpers` to 6.0.2.
 
 * __[maintenance]__
 Update dependency `@csstools/color-calc` to 3.1.1.
 
 * __[maintenance]__
-Update dependency `@csstools/css-color-parser` to 4.0.1.
+Update dependency `@csstools/css-color-parser` to 4.0.2.
 
 * __[maintenance]__
 Update dependency `@csstools/css-parser-algorithms` to 4.0.0.
