@@ -37,7 +37,7 @@ Update dependency `@csstools/css-color-parser` to 4.0.2.
 Update dependency `@csstools/css-parser-algorithms` to 4.0.0.
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.27.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.0.28.
 
 * __[maintenance]__
 Update dependency `@csstools/css-tokenizer` to 4.0.0.
@@ -46,7 +46,7 @@ Update dependency `@csstools/css-tokenizer` to 4.0.0.
 Update dependency `data-urls` to 6.0.1.
 
 * __[maintenance]__
-Update dependency `@exodus/bytes` to 1.11.0.
+Update dependency `@exodus/bytes` to 1.14.1.
 
 * __[maintenance]__
 Update dependency `html-encoding-sniffer` to 6.0.0.
