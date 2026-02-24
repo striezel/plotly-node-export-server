@@ -10,7 +10,7 @@ Since [Plotly.js](https://plotly.com/javascript/) is the main dependency of this
 application, major version changes in Plotly.js will also trigger a major
 version change in this application.
 
-## Next Version (2025-11-??)
+## Version 7.0.3 (2026-02-24)
 
 * __[maintenance]__
 Update dependency `@acemir/cssom` to 0.9.31.
