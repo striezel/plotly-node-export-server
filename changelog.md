@@ -13,7 +13,13 @@ version change in this application.
 ## Version 7.?.? (2026-03-??)
 
 * __[maintenance]__
+Update dependency `lru-cache` to 11.2.7.
+
+* __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.27.
+
+* __[maintenance]__
+Update dependency `ws` to 8.20.0.
 
 ## Version 7.0.3 (2026-02-24)
 
