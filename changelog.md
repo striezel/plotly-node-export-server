@@ -13,10 +13,16 @@ version change in this application.
 ## Version 7.?.? (2026-03-??)
 
 * __[maintenance]__
+Update dependency `css-tree` to 3.2.1.
+
+* __[maintenance]__
 Update dependency `@exodus/bytes` to 1.15.0.
 
 * __[maintenance]__
 Update dependency `lru-cache` to 11.2.7.
+
+* __[maintenance]__
+Update dependency `mdn-data` to 2.27.1.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.27.
