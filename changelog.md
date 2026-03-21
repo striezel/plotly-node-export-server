@@ -13,10 +13,16 @@ version change in this application.
 ## Version 7.?.? (2026-03-??)
 
 * __[maintenance]__
+Update dependency `@exodus/bytes` to 1.15.0.
+
+* __[maintenance]__
 Update dependency `lru-cache` to 11.2.7.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.27.
+
+* __[maintenance]__
+Update dependency `tough-cookie` to 6.0.1.
 
 * __[maintenance]__
 Update dependency `ws` to 8.20.0.
