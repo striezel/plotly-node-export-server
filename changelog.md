@@ -13,7 +13,7 @@ version change in this application.
 ## Version 7.?.? (2026-03-??)
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.1.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.2.
 
 * __[maintenance]__
 Update dependency `css-tree` to 3.2.1.
