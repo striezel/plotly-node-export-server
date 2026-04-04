@@ -28,7 +28,7 @@ Update dependency `lru-cache` to 11.2.7.
 Update dependency `mdn-data` to 2.27.1.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.0.27.
+Update dependencies `tldts` + `tldts-core` to 7.0.28.
 
 * __[maintenance]__
 Update dependency `tough-cookie` to 6.0.1.
