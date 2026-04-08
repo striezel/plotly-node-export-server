@@ -22,7 +22,7 @@ Update dependency `css-tree` to 3.2.1.
 Update dependency `@exodus/bytes` to 1.15.0.
 
 * __[maintenance]__
-Update dependency `lru-cache` to 11.2.7.
+Update dependency `lru-cache` to 11.3.3.
 
 * __[maintenance]__
 Update dependency `mdn-data` to 2.27.1.
