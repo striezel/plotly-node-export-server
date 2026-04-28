@@ -25,6 +25,9 @@ Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.3.
 Update dependency `css-tree` to 3.2.1.
 
 * __[maintenance]__
+Update dependency `entities` to 8.0.0.
+
+* __[maintenance]__
 Update dependency `@exodus/bytes` to 1.15.0.
 
 * __[maintenance]__
@@ -32,6 +35,9 @@ Update dependency `lru-cache` to 11.3.5.
 
 * __[maintenance]__
 Update dependency `mdn-data` to 2.27.1.
+
+* __[maintenance]__
+Update dependency `parse5` to 8.0.1.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.0.28.
