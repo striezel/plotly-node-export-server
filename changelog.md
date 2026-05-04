@@ -40,7 +40,7 @@ Update dependency `mdn-data` to 2.27.1.
 Update dependency `parse5` to 8.0.1.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.0.28.
+Update dependencies `tldts` + `tldts-core` to 7.0.30.
 
 * __[maintenance]__
 Update dependency `tough-cookie` to 6.0.1.
