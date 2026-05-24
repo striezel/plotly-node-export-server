@@ -28,7 +28,7 @@ Update dependency `css-tree` to 3.2.1.
 Update dependency `entities` to 8.0.0.
 
 * __[maintenance]__
-Update dependency `@exodus/bytes` to 1.15.0.
+Update dependency `@exodus/bytes` to 1.15.1.
 
 * __[maintenance]__
 Update dependency `lru-cache` to 11.5.0.
