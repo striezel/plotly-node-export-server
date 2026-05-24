@@ -31,7 +31,7 @@ Update dependency `entities` to 8.0.0.
 Update dependency `@exodus/bytes` to 1.15.0.
 
 * __[maintenance]__
-Update dependency `lru-cache` to 11.3.6.
+Update dependency `lru-cache` to 11.5.0.
 
 * __[maintenance]__
 Update dependency `mdn-data` to 2.27.1.
@@ -46,7 +46,7 @@ Update dependencies `tldts` + `tldts-core` to 7.0.30.
 Update dependency `tough-cookie` to 6.0.1.
 
 * __[maintenance]__
-Update dependency `ws` to 8.20.1.
+Update dependency `ws` to 8.21.0.
 
 ## Version 7.0.3 (2026-02-24)
 
