@@ -31,7 +31,7 @@ Update dependency `entities` to 8.0.0.
 Update dependency `@exodus/bytes` to 1.15.1.
 
 * __[maintenance]__
-Update dependency `lru-cache` to 11.5.0.
+Update dependency `lru-cache` to 11.5.1.
 
 * __[maintenance]__
 Update dependency `mdn-data` to 2.27.1.
