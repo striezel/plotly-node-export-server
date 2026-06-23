@@ -13,6 +13,10 @@ version change in this application.
 ## Version 7.?.? (2026-03-??)
 
 * __[maintenance]__
+Update Dockerfile to use Node.js 24 instead of Node.js 22.
+Furthermore, the base image is updated from Debian 12 to Debian 13.
+
+* __[maintenance]__
 Update dependency `@csstools/css-calc` to 3.2.1.
 
 * __[maintenance]__
