@@ -17,10 +17,13 @@ Update Dockerfile to use Node.js 24 instead of Node.js 22.
 Furthermore, the base image is updated from Debian 12 to Debian 13.
 
 * __[maintenance]__
+Update dependency `@csstools/color-helpers` to 6.1.0.
+
+* __[maintenance]__
 Update dependency `@csstools/css-calc` to 3.2.1.
 
 * __[maintenance]__
-Update dependency `@csstools/css-color-parser` to 4.1.8.
+Update dependency `@csstools/css-color-parser` to 4.1.9.
 
 * __[maintenance]__
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.5.
