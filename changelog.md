@@ -50,7 +50,7 @@ Update dependency `parse5` to 8.0.1.
 Update dependencies `tldts` + `tldts-core` to 7.4.7.
 
 * __[maintenance]__
-Update dependency `tough-cookie` to 6.0.1.
+Update dependency `tough-cookie` to 6.0.2.
 
 * __[maintenance]__
 Update dependency `ws` to 8.21.0.
