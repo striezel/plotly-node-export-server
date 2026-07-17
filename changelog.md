@@ -53,7 +53,7 @@ Update dependencies `tldts` + `tldts-core` to 7.4.9.
 Update dependency `tough-cookie` to 6.0.2.
 
 * __[maintenance]__
-Update dependency `ws` to 8.21.0.
+Update dependency `ws` to 8.21.1.
 
 ## Version 7.0.3 (2026-02-24)
 
