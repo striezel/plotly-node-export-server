@@ -13,6 +13,12 @@ version change in this application.
 ## Version 7.?.? (2026-07-??)
 
 * __[maintenance]__
+Update dependency `@csstools/css-calc` to 3.3.0.
+
+* __[maintenance]__
+Update dependency `@csstools/css-color-parser` to 4.1.10.
+
+* __[maintenance]__
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.7.
 
 ## Version 7.0.4 (2026-07-17)
