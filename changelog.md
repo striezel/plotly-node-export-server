@@ -24,6 +24,9 @@ Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.7.
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.4.10.
 
+* __[maintenance]__
+Update dependency `ws` to 8.21.3.
+
 ## Version 7.0.4 (2026-07-17)
 
 * __[maintenance]__
