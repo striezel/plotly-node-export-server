@@ -25,7 +25,7 @@ Update dependency `@csstools/css-color-parser` to 4.2.0.
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.8.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.4.10.
+Update dependencies `tldts` + `tldts-core` to 7.4.11.
 
 * __[maintenance]__
 Update dependency `ws` to 8.21.3.
