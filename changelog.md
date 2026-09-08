@@ -13,6 +13,9 @@ version change in this application.
 ## Version 7.?.? (2026-07-??)
 
 * __[maintenance]__
+Update dependency `bidi-js` to 1.1.0.
+
+* __[maintenance]__
 Update dependency `@csstools/color-helpers` to 6.1.1.
 
 * __[maintenance]__
@@ -23,6 +26,9 @@ Update dependency `@csstools/css-color-parser` to 4.2.1.
 
 * __[maintenance]__
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.9.
+
+* __[maintenance]__
+Update dependency `entities` to 8.1.0.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.4.12.
