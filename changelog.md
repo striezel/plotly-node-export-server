@@ -25,7 +25,7 @@ Update dependency `@csstools/css-calc` to 3.3.0.
 Update dependency `@csstools/css-color-parser` to 4.2.2.
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.12.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.13.
 
 * __[maintenance]__
 Update dependency `entities` to 8.1.0.
