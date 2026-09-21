@@ -28,7 +28,13 @@ Update dependency `@csstools/css-color-parser` to 4.2.3.
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.14.
 
 * __[maintenance]__
+Update dependency `@csstools/css-tokenizer` to 4.0.1.
+
+* __[maintenance]__
 Update dependency `entities` to 8.1.0.
+
+* __[maintenance]__
+Update dependency `lru-cache` to 11.5.3.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.4.13.
