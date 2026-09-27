@@ -40,7 +40,7 @@ Update dependency `entities` to 8.1.0.
 Update dependency `lru-cache` to 11.5.3.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.4.13.
+Update dependencies `tldts` + `tldts-core` to 7.4.16.
 
 * __[maintenance]__
 Update dependency `ws` to 8.21.3.
