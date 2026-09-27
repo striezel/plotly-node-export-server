@@ -37,13 +37,16 @@ Update dependency `@csstools/css-tokenizer` to 4.0.2.
 Update dependency `entities` to 8.1.0.
 
 * __[maintenance]__
+Update dependency `@exodus/bytes` to 1.16.0.
+
+* __[maintenance]__
 Update dependency `lru-cache` to 11.5.3.
 
 * __[maintenance]__
 Update dependencies `tldts` + `tldts-core` to 7.4.16.
 
 * __[maintenance]__
-Update dependency `ws` to 8.21.3.
+Update dependency `ws` to 8.22.0.
 
 ## Version 7.0.4 (2026-07-17)
 
