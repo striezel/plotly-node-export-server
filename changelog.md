@@ -22,7 +22,7 @@ Update dependency `@csstools/color-helpers` to 6.1.2.
 Update dependency `@csstools/css-calc` to 3.4.1.
 
 * __[maintenance]__
-Update dependency `@csstools/css-color-parser` to 4.2.3.
+Update dependency `@csstools/css-color-parser` to 4.2.4.
 
 * __[maintenance]__
 Update dependency `@csstools/css-parser-algorithms` to 4.0.1.
