@@ -28,7 +28,7 @@ Update dependency `@csstools/css-color-parser` to 4.2.4.
 Update dependency `@csstools/css-parser-algorithms` to 4.0.1.
 
 * __[maintenance]__
-Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.14.
+Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.15.
 
 * __[maintenance]__
 Update dependency `@csstools/css-tokenizer` to 4.0.2.
