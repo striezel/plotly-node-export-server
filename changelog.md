@@ -19,13 +19,13 @@ Update dependency `bidi-js` to 1.1.0.
 Update dependency `@csstools/color-helpers` to 6.1.2.
 
 * __[maintenance]__
-Update dependency `@csstools/css-calc` to 3.4.1.
+Update dependency `@csstools/css-calc` to 3.4.2.
 
 * __[maintenance]__
 Update dependency `@csstools/css-color-parser` to 4.2.4.
 
 * __[maintenance]__
-Update dependency `@csstools/css-parser-algorithms` to 4.0.1.
+Update dependency `@csstools/css-parser-algorithms` to 4.0.2.
 
 * __[maintenance]__
 Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.15.
