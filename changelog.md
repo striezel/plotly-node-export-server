@@ -13,6 +13,9 @@ version change in this application.
 ## Version 7.?.? (2026-07-??)
 
 * __[maintenance]__
+Update dependency `@acemir/cssom` to 0.9.32.
+
+* __[maintenance]__
 Update dependency `bidi-js` to 1.1.0.
 
 * __[maintenance]__
