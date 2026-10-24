@@ -49,7 +49,7 @@ Update dependency `lru-cache` to 11.5.3.
 Update dependency `source-map-js` to 1.2.2.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.4.18.
+Update dependencies `tldts` + `tldts-core` to 7.4.19.
 
 * __[maintenance]__
 Update dependency `ws` to 8.22.0.
