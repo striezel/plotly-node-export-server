@@ -25,7 +25,7 @@ Update dependency `@csstools/color-helpers` to 6.1.2.
 Update dependency `@csstools/css-calc` to 3.4.3.
 
 * __[maintenance]__
-Update dependency `@csstools/css-color-parser` to 4.2.6.
+Update dependency `@csstools/css-color-parser` to 4.2.7.
 
 * __[maintenance]__
 Update dependency `@csstools/css-parser-algorithms` to 4.0.2.
@@ -55,7 +55,7 @@ Update dependency `source-map-js` to 1.2.2.
 Update dependencies `tldts` + `tldts-core` to 7.4.19.
 
 * __[maintenance]__
-Update dependency `ws` to 8.22.0.
+Update dependency `ws` to 8.22.1.
 
 ## Version 7.0.4 (2026-07-17)
 
