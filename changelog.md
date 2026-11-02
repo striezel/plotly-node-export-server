@@ -37,13 +37,16 @@ Update dependency `@csstools/css-syntax-patches-for-csstree` to 1.1.15.
 Update dependency `@csstools/css-tokenizer` to 4.0.2.
 
 * __[maintenance]__
-Update dependency `entities` to 8.1.0.
+Update dependency `entities` to 9.0.0.
 
 * __[maintenance]__
 Update dependency `@exodus/bytes` to 1.16.0.
 
 * __[maintenance]__
 Update dependency `lru-cache` to 11.5.3.
+
+* __[maintenance]__
+Update dependency `parse5` to 8.1.0.
 
 * __[maintenance]__
 Update dependency `source-map-js` to 1.2.2.
