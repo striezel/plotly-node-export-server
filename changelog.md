@@ -55,6 +55,9 @@ Update dependency `source-map-js` to 1.2.2.
 Update dependencies `tldts` + `tldts-core` to 7.4.19.
 
 * __[maintenance]__
+Update dependency `tough-cookie` to 6.1.0.
+
+* __[maintenance]__
 Update dependency `ws` to 8.22.1.
 
 ## Version 7.0.4 (2026-07-17)
