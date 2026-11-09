@@ -46,7 +46,7 @@ Update dependency `@exodus/bytes` to 1.16.0.
 Update dependency `lru-cache` to 11.5.3.
 
 * __[maintenance]__
-Update dependency `parse5` to 8.1.0.
+Update dependency `parse5` to 8.1.1.
 
 * __[maintenance]__
 Update dependency `source-map-js` to 1.2.2.
@@ -58,7 +58,7 @@ Update dependencies `tldts` + `tldts-core` to 7.4.19.
 Update dependency `tough-cookie` to 6.1.0.
 
 * __[maintenance]__
-Update dependency `ws` to 8.22.1.
+Update dependency `ws` to 8.22.2.
 
 ## Version 7.0.4 (2026-07-17)
 
