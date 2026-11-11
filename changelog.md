@@ -55,7 +55,7 @@ Update dependency `parse5` to 8.1.1.
 Update dependency `source-map-js` to 1.2.2.
 
 * __[maintenance]__
-Update dependencies `tldts` + `tldts-core` to 7.4.19.
+Update dependencies `tldts` + `tldts-core` to 7.4.22.
 
 * __[maintenance]__
 Update dependency `tough-cookie` to 6.1.0.
