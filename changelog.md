@@ -16,7 +16,7 @@ version change in this application.
 Update Dockerfile to use Node.js 26 instead of Node.js 24.
 
 * __[maintenance]__
-Update dependency `@acemir/cssom` to 0.9.32.
+Update dependency `@acemir/cssom` to 0.9.33.
 
 * __[maintenance]__
 Update dependency `bidi-js` to 1.1.0.
@@ -61,7 +61,7 @@ Update dependencies `tldts` + `tldts-core` to 7.4.22.
 Update dependency `tough-cookie` to 6.1.0.
 
 * __[maintenance]__
-Update dependency `ws` to 8.22.2.
+Update dependency `ws` to 8.23.0.
 
 ## Version 7.0.4 (2026-07-17)
 
