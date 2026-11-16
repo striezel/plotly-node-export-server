@@ -22,7 +22,6 @@ const fs = require('fs');
 const http = require('http');
 const path = require('path');
 const ssr = require('./ssr.js');
-const url = require('url');
 
 // Use hostname from environment variable HOST, if it is set.
 const hostname = process.env.HOST || 'localhost';
@@ -42,19 +41,7 @@ const port = (parsedPort && parsedPort > 0 && parsedPort < 65536) ? parsedPort :
 
 const server = http.createServer(function(req, res) {
   // ---- Handle invalid URL requests ----
-  try
-  {
-    // The value in req.url is a relative URL, and the WHATWG URL API needs a
-    // base URL as second parameter in that case, so we provide a made up host.
-    var file = new URL(req.url, 'http://dummyhost/');
-  }
-  catch
-  {
-    // Invalid URL - just set pathname to something other than '/', so it will
-    // be recognized as a path which is not allowed.
-    var file = { pathname: '/something-else/' };
-  }
-  if (file.pathname !== '/') {
+  if (req.url !== '/') {
     // It is an invalid file request.
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/plain');
