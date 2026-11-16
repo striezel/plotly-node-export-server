@@ -1,6 +1,6 @@
 /*
     Plotly.js offline image export server with Node.js
-    Copyright (C) 2018, 2020, 2021, 2022, 2023, 2024  Dirk Stolle
+    Copyright (C) 2018, 2020, 2021, 2022, 2023, 2024, 2026  Dirk Stolle
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -42,7 +42,18 @@ const port = (parsedPort && parsedPort > 0 && parsedPort < 65536) ? parsedPort :
 
 const server = http.createServer(function(req, res) {
   // ---- Handle invalid URL requests ----
-  const file = url.parse(req.url);
+  try
+  {
+    // The value in req.url is a relative URL, and the WHATWG URL API needs a
+    // base URL as second parameter in that case, so we provide a made up host.
+    var file = new URL(req.url, 'http://dummyhost/');
+  }
+  catch
+  {
+    // Invalid URL - just set pathname to something other than '/', so it will
+    // be recognized as a path which is not allowed.
+    var file = { pathname: '/something-else/' };
+  }
   if (file.pathname !== '/') {
     // It is an invalid file request.
     res.statusCode = 404;
